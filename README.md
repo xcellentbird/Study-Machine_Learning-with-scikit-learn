@@ -27,7 +27,13 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
 <details>
   <summary><b>5. About AI </b></summary>
   
-  [실리콘밸리의 ML옵스 가이드 리뷰](https://github.com/xcellentbird/Deep_Learning/blob/main/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+  [실리콘밸리의 ML옵스 가이드 리뷰](https://github.com/xcellentbird/Deep_Learning/blob/main/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)  
+  
+  ML의 평가
+  - 분류 모델 측면 - 정확도(Accuracy) = 예측 결과가 실제와 동일한 데이터 건수 / 전체 예측 데이터 건수.  
+  ![image](https://user-images.githubusercontent.com/59414764/115999361-5467f800-a626-11eb-94b3-4fd9cdf463e8.png)
+
+  
 </details>
 <details>
   <summary><b>+) TMI </b></summary>
