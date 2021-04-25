@@ -19,9 +19,9 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   <summary><b>3. Tensorflow/ Keras/ scikit-learn </b></summary>
   
   - API, 함수 모음집
-  > <details>
-  > <summary><b>3. Tensorflow</b></summary>
-  > </details>
+   <details>
+   <summary><b>3. Tensorflow</b></summary>
+   </details>
 </details>
 <details>
   <summary><b>4. 기계학습 - 강의 복습 노트 </b></summary>
