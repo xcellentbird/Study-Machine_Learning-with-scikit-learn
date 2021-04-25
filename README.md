@@ -16,16 +16,21 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
    [저자 블로그](https://tensorflow.blog/hg-mldl/)
 </details>
 <details>
-  <summary><b>3. Tensorflow/ Keras </b></summary>
+  <summary><b>3. Tensorflow/ Keras/ scikit-learn </b></summary>
   
   - API, 함수 모음집
-</details>
+  <details>
+  <summary><b>3. Tensorflow</b></summary>
+  
+  </details>
 </details>
 <details>
   <summary><b>4. 기계학습 - 강의 복습 노트 </b></summary>
 </details>
 <details>
   <summary><b>5. 용어사전 </b></summary>
+  
+  표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다)
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
