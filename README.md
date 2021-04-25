@@ -31,4 +31,9 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
 </details>
 <details>
   <summary><b>+) TMI </b></summary>
+  
+  - 경량화, 추론 속도 한계가 있을 때는, Tensorrt나 Onnx()로 변환을 통해 최적화 시킬 수 있다.
+  - Tensorrt: NVDIA GPU를 이용한 모델 최적화 엔진 인터페이스 - https://developer.nvidia.com/tensorrt
+  - Onnx: Tensorflow, PyTorch에서 만든 모델들을 export하고, 서로 각 프레임워크 환경 또는 모바일 환경에서 import하여 호환 사용을 가능하게 한다. - https://github.com/onnx/onnx
+  
 </details>
