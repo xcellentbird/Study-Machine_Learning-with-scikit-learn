@@ -36,4 +36,12 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - Tensorrt: NVDIA GPU를 이용한 모델 최적화 엔진 인터페이스 - https://developer.nvidia.com/tensorrt
   - Onnx: Tensorflow, PyTorch에서 만든 모델들을 export하고, 서로 각 프레임워크 환경 또는 모바일 환경에서 import하여 호환 사용을 가능하게 한다. - https://github.com/onnx/onnx
   
+  - PID제어 기법과 딥러닝은 어느 정도 연관성이 있지 않을까? 
+  
+  ![image](https://user-images.githubusercontent.com/59414764/115998955-c4757e80-a624-11eb-8ebc-bfce97b0dc0d.png)  
+
+  ![image](https://user-images.githubusercontent.com/59414764/115998960-cb03f600-a624-11eb-9ac8-6d375ec79584.png)  
+
+  ![image](https://user-images.githubusercontent.com/59414764/115998941-b4f63580-a624-11eb-9e13-29e207791a3a.png)
+
 </details>
