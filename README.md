@@ -27,8 +27,8 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
     </details>
     <details>
     <summary><b>scikit-learn</b></summary>
-    - sklearn.model_selection.train_test_split(*arrays, test_size, train_size, random_state, shuffle) = return list, length=2*len(arrays)
-    - sklearn.neighbors.KNeighborsClassifier(n_neighbors=5, weights={‘uniform’, ‘distance’}, algorithm={‘auto’, ‘ball_tree’, ‘kd_tree’, ‘brute’}, leaf_size=30(set when algorithm=ball_tree, kd_tree), p=1:manhattan_distance|2:euclidean_distance)
+    - sklearn.model_selection.train_test_split(*arrays, test_size, train_size, random_state, shuffle) = return list, length=2*len(arrays)  
+    - sklearn.neighbors.KNeighborsClassifier(n_neighbors=5, weights={‘uniform’, ‘distance’}, algorithm={‘auto’, ‘ball_tree’, ‘kd_tree’, ‘brute’}, leaf_size=30(set when algorithm=ball_tree, kd_tree), p=1:manhattan_distance|2:euclidean_distance)  
     - - kn.fit(), kn.get_params(), kn.predict, kn.predict_proba
     </details>
 </details>
