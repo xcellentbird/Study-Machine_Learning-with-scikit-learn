@@ -42,6 +42,6 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
 
   ![image](https://user-images.githubusercontent.com/59414764/115998960-cb03f600-a624-11eb-9ac8-6d375ec79584.png)  
 
-  ![image](https://user-images.githubusercontent.com/59414764/115998941-b4f63580-a624-11eb-9e13-29e207791a3a.png)
+  ![PID_Compensation_Animated](https://user-images.githubusercontent.com/59414764/115999012-fd155800-a624-11eb-86b1-1cc614916506.gif)
 
 </details>
