@@ -4,6 +4,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
 <details>
   <summary><b>1. KDT AI Dev-Course </b></summary>
   - 자료구조, 알고리즘
+  - 인공지능을 위하 수학
 </details>
 <details>
   <summary><b>2. 책 - 혼공머신 </b></summary>
