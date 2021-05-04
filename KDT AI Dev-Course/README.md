@@ -1,1 +1,1 @@
-어떤 교육, 어떤 아웃풋이 중요한 게 아니라, 내가 얼마만큼 여기서 노력해서 얼마만큼 얻어가느냐가 가장 중요하다.
+보조 사이트: https://datascienceschool.net/02%20mathematics/03.04%20%ED%8A%B9%EC%9E%87%EA%B0%92%20%EB%B6%84%ED%95%B4.html
