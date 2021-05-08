@@ -59,6 +59,12 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
 
   - 교차 검증(cross-validation): 학습할 데이터에서 여러 개의 검증 데이터셋으로 나누고, 검증 세트마다 나머지 데이터에서 훈련한 모델을 해당 검증 세트에서 평가하도록 하는 것. 단점으로, 검증 세트가 많아 훈련 시간이 길다.  
   
+  - Data Augumentation: 기존의 데이터를 이용하여 새로운 데이터를 만드는 것. 이미지를 예로 들자면, 이미지를 뒤집거나, 명암을 바꿀 수 있다. 이를 통해 사물의 좌우 바뀐 모습도 인식할 수 있게 되고, 명암에도 robust하게 된다.
+  - model ensemble(모델 앙상블): 서로 다른 모델들을 함께 사용하여 기존보다 성능을 더 올리는 방법 Bagging과 Boosting이 있다.
+  - ensemble _ bagging:
+  - ensemble _ boosting:
+  - data imbalance(데이터 불균형): 여러 방면으로 데이터가 불균형할 수 있다. 이미지 크기가 다를 수 있고, 각 학습 데이터의 라벨 이미지가 서로 다 다를 수 있다.
+  - parameter tuning: 모델의 여러 파라미터를 계속 고쳐나가면서 성능을 향상시키는 것.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
