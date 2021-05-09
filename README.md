@@ -65,6 +65,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - ensemble _ boosting:
   - data imbalance(데이터 불균형): 여러 방면으로 데이터가 불균형할 수 있다. 이미지 크기가 다를 수 있고, 각 학습 데이터의 라벨 이미지가 서로 다 다를 수 있다.
   - parameter tuning: 모델의 여러 파라미터를 계속 고쳐나가면서 성능을 향상시키는 것.
+  - data normalization: 데이터 feature의 스케일(중요도)을 동일하게(또는 의도적으로 상이하게) 바꾸는 것. 보통 feature값에 평균값을 빼고, 분산값으로 나눈다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
