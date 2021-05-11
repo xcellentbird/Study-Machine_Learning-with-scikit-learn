@@ -67,6 +67,8 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - parameter tuning: 모델의 여러 파라미터를 계속 고쳐나가면서 성능을 향상시키는 것.
   - data normalization: 데이터 feature의 스케일(중요도)을 동일하게(또는 의도적으로 상이하게) 바꾸는 것. 보통 feature값에 평균값을 빼고, 분산값으로 나눈다.
   - RMSE(평균 제곱근 오차): 회귀 문제의 성능 지표. 예측값(가설)에 정답값을 빼어 오차를 구하고, 오차를 제곱(절댓값)하여 평균을 낸다. 그 후에 제곱근 값을 취한다.
+  - receptive field(수용 영역): filter(kernel)가 적용되는 실질적인 필터 크기의 공간을 뜻한다.
+  - spatial information: 공간 정보. 이미지 상에서 픽셀끼리의 공간적 연결 관계 정보를 뜻한다. 참고로 이미지를 1열로 나열하면 사라지게 된다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
