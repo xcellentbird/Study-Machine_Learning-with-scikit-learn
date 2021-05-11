@@ -69,6 +69,8 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - RMSE(평균 제곱근 오차): 회귀 문제의 성능 지표. 예측값(가설)에 정답값을 빼어 오차를 구하고, 오차를 제곱(절댓값)하여 평균을 낸다. 그 후에 제곱근 값을 취한다.
   - receptive field(수용 영역): filter(kernel)가 적용되는 실질적인 필터 크기의 공간을 뜻한다.
   - spatial information: 공간 정보. 이미지 상에서 픽셀끼리의 공간적 연결 관계 정보를 뜻한다. 참고로 이미지를 1열로 나열하면 사라지게 된다.
+  - tranpose-convolution: 크게 padding(?)된 map을 convolution을 통해, 원래의 map보다 더 큰 map을 얻는 것.
+  - Deconvolution: convolution연산을 거꾸로 수행하는 것. 역산
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
