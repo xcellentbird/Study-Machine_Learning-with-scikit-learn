@@ -71,6 +71,8 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - spatial information: 공간 정보. 이미지 상에서 픽셀끼리의 공간적 연결 관계 정보를 뜻한다. 참고로 이미지를 1열로 나열하면 사라지게 된다.
   - tranpose-convolution: 크게 padding(?)된 map을 convolution을 통해, 원래의 map보다 더 큰 map을 얻는 것.
   - Deconvolution: convolution연산을 거꾸로 수행하는 것. 역산
+  - FLOPs(FLoating point OPerations): 딥러닝에서 계산량(덧셈, 곱셈 등 연산량)을 뜻한다. 모델의 크기와 효율성을 가늠할 수 있다.
+  - MAC(Multiply-ACcumulate): FLOPs와 같은 딥러닝에서의 계산량을 뜻한다. 일반적으로 1 MAC = 2 FLOPs가 된다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
