@@ -63,6 +63,8 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - model ensemble(모델 앙상블): 서로 다른 모델들을 함께 사용하여 기존보다 성능을 더 올리는 방법 Bagging과 Boosting이 있다.
   - ensemble _ bagging:
   - ensemble _ boosting:
+  - ensemble _ hard voting: 여러 모델을 사용하여, 가장 많은 모델이 추론한 label을 선택하는 앙상블 기법
+  - ensemble _ soft voting: 여러 모델이 레이블 추론 확률들을 각각 레이블 별로 평균을 내어 가장 높은 레이블을 선택하는 
   - data imbalance(데이터 불균형): 여러 방면으로 데이터가 불균형할 수 있다. 이미지 크기가 다를 수 있고, 각 학습 데이터의 라벨 이미지가 서로 다 다를 수 있다.
   - parameter tuning: 모델의 여러 파라미터를 계속 고쳐나가면서 성능을 향상시키는 것.
   - data normalization: 데이터 feature의 스케일(중요도)을 동일하게(또는 의도적으로 상이하게) 바꾸는 것. 보통 feature값에 평균값을 빼고, 분산값으로 나눈다.
