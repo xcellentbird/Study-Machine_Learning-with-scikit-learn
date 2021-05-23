@@ -76,6 +76,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - FLOPs(FLoating point OPerations): 딥러닝에서 계산량(덧셈, 곱셈 등 연산량)을 뜻한다. 모델의 크기와 효율성을 가늠할 수 있다.
   - MAC(Multiply-ACcumulate): FLOPs와 같은 딥러닝에서의 계산량을 뜻한다. 일반적으로 1 MAC = 2 FLOPs가 된다.
   - backpropagation(역전파): 예측값과 실제값의 오차를 이용하여 가중치를 개선하는 과정
+  - activation function(활성화 함수)의 종류: Sigmoid(0 or 1, Deep하게 사용하면 기울기가 사라지는 단점), tanh(-1 or 1, Sigmoid보다는 덜하지만 여전히 Gradient Vanishing 존재), ReLU(0 or input, 기울기가 0또는 1이므로 Gradient Vanishing발생 X, exp지수함수가 없어 tanh,sigmoid보다 연산량 6배 빠르다. 하지만 다음 layer가 있을 경우 출력값이 모두 0이 되는 현상이 있다), Leaky ReLU(0.1x or x, alpha를 보통 0.1로 설정. ReLU의 한계점 보완), Maxout, ELU(a(e^x-1) or x, exponential linear unit. alpha2도 설정 가능하다. 지수함수가 있어 속도가 빠르지 않은편), PReLU(parametric rectified linear unit. ax or x, Leaky LeLU와 비슷하지만 alpha가 학습 가능한 parameter이다)
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
