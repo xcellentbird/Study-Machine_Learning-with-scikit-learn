@@ -24,7 +24,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
       <summary><b>Pytorch</b></summary>
       - require_grad parameter를 True로 설정하면 자동으로 변화도(미분)를 계산(update)한다는 것이다. 반대로 False로 설정하면 update하지 않는다는 것. 주로 test과정에서는 weight가 update할 필요 없으므로 False로 설정. backward()에 의해 계산(미분)이 시작된다.
       - optimizer.zero_grad()는, 최적화기에 grad기울기가 쌓여 엉뚱한 방향으로 최적화 되는 것을 막아준다. model도 학습을 위해서 써주기도 한다.
-      - nn.Sequential()과 forward(): 두가지 모두 모델을 설계를 위한 프레임이다. forward는 선언했었던 모델의 각 층을 실행 순서대로 정렬해주는 역할을 한다. Sequential은 초기에 선언과 동시에 정렬하면서 넣어야한다. ~~가독성은 Sequential이 좋아서 이거로!~~
+      - nn.Sequential()과 forward(): 두가지 모두 모델을 설계를 위한 프레임이다. forward는 선언했었던 모델의 각 층을 실행 순서대로 정렬해주는 역할을 한다. Sequential은 초기에 선언과 동시에 정렬하면서 넣어야한다. --가독성은 Sequential이 좋아서 이거로!--
     </details>
     <details>
       <summary><b>Tensorflow</b></summary>
