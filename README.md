@@ -75,6 +75,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - Deconvolution: convolution연산을 거꾸로 수행하는 것. 역산
   - FLOPs(FLoating point OPerations): 딥러닝에서 계산량(덧셈, 곱셈 등 연산량)을 뜻한다. 모델의 크기와 효율성을 가늠할 수 있다.
   - MAC(Multiply-ACcumulate): FLOPs와 같은 딥러닝에서의 계산량을 뜻한다. 일반적으로 1 MAC = 2 FLOPs가 된다.
+  - backpropagation(역전파): 예측값과 실제값의 오차를 이용하여 가중치를 개선하는 과정
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
