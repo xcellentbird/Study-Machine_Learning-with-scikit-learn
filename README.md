@@ -87,7 +87,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - end to end learning(종단간 학습): 입력부터 출력까지 파이프라인 네트워크 없이 한번에 학습하는 방법
   - Transfer Learning과 Fine Tuning: 보통 전이학습이라함은 CNN layer와 이전에 학습된 가중치(weight)를 그대로 가져와, Classifer(분류기, fc)만을 학습시키는 것(Fine Tuning)을 뜻한다.
   - K-Fold Cross Validation: training dataset을 K개로 나누고, 한 파트씩 번갈아가며 validation dataset으로 지정한다. validation dataset에 대한 error을 반영할 수 있고, 전체 데이터셋을 학습시킬 수 있다는 장점이 있다. 하지만, 그만큼 학습 시간이 늘어난다.
-  - outlier: 잘못 평가된 값으로, 결과적으로 잘못된 분석 겨로가를 초래할 수 있는 값들을 의미한다. 독립된 모델 앙상블 기법을 통해 해결할 수 있을 것으로 보인다.
+  - outlier: 잘못 평가된 값으로, 결과적으로 잘못된 분석 겨로가를 초래할 수 있는 값들을 의미한다. [참고](https://ourcstory.tistory.com/142) 독립된 모델 앙상블 기법을 통해 해결할 수 있을 것으로 보인다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
