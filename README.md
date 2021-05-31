@@ -86,6 +86,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - activation function(활성화 함수)의 종류: Sigmoid(0 or 1, Deep하게 사용하면 기울기가 사라지는 단점), tanh(-1 or 1, Sigmoid보다는 덜하지만 여전히 Gradient Vanishing 존재), ReLU(0 or input, 기울기가 0또는 1이므로 Gradient Vanishing발생 X, exp지수함수가 없어 tanh,sigmoid보다 연산량 6배 빠르다. 하지만 다음 layer가 있을 경우 출력값이 모두 0이 되는 현상이 있다), Leaky ReLU(0.1x or x, alpha를 보통 0.1로 설정. ReLU의 한계점 보완), Maxout, ELU(a(e^x-1) or x, exponential linear unit. alpha2도 설정 가능하다. 지수함수가 있어 속도가 빠르지 않은편), PReLU(parametric rectified linear unit. ax or x, Leaky LeLU와 비슷하지만 alpha가 학습 가능한 parameter이다)
   - end to end learning(종단간 학습): 입력부터 출력까지 파이프라인 네트워크 없이 한번에 학습하는 방법
   - Transfer Learning과 Fine Tuning: 보통 전이학습이라함은 CNN layer와 이전에 학습된 가중치(weight)를 그대로 가져와, Classifer(분류기, fc)만을 학습시키는 것(Fine Tuning)을 뜻한다.
+  - K-Fold Cross Validation: training dataset을 K개로 나누고, 한 파트씩 번갈아가며 validation dataset으로 지정한다. validation dataset에 대한 error을 반영할 수 있고, 전체 데이터셋을 학습시킬 수 있다는 장점이 있다. 하지만, 그만큼 학습 시간이 늘어난다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
