@@ -89,6 +89,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - K-Fold Cross Validation: training dataset을 K개로 나누고, 한 파트씩 번갈아가며 validation dataset으로 지정한다. validation dataset에 대한 error을 반영할 수 있고, 전체 데이터셋을 학습시킬 수 있다는 장점이 있다. 하지만, 그만큼 학습 시간이 늘어난다.
   - outlier: 잘못 평가된 값으로, 결과적으로 잘못된 분석 겨로가를 초래할 수 있는 값들을 의미한다. [참고](https://ourcstory.tistory.com/142) 독립된 모델 앙상블 기법을 통해 해결할 수 있을 것으로 보인다.
   - attention feature: 데이터에서 원하고자 하는 feature에 가중치를 두는 것. ex) Image 데이터에서 image의 가로 세로 크기를 추가 feature로 삼는다
+  - depth wise separable convolution: 채널을 한번에 3차원 kernel로 컨볼루션을 시행하지 않고, 채널을 나누어 2차원 kernel로 각각 컨볼루션 후 다시 곂쳐놓는다. 그리고 [1, 1, depth]크기의 컨볼루션을 한번 더 수행하여 한 개의 채널 결과값(2차원)을 얻어낸다. 이러한 과정을 수행하는 이유는 연산량을 줄이기 위해서다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
