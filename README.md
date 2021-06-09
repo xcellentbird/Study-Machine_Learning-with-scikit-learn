@@ -90,6 +90,9 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - outlier: 잘못 평가된 값으로, 결과적으로 잘못된 분석 겨로가를 초래할 수 있는 값들을 의미한다. [참고](https://ourcstory.tistory.com/142) 독립된 모델 앙상블 기법을 통해 해결할 수 있을 것으로 보인다.
   - attention feature: 데이터에서 원하고자 하는 feature에 가중치를 두는 것. ex) Image 데이터에서 image의 가로 세로 크기를 추가 feature로 삼는다
   - depth wise separable convolution: 채널을 한번에 3차원 kernel로 컨볼루션을 시행하지 않고, 채널을 나누어 2차원 kernel로 각각 컨볼루션 후 다시 곂쳐놓는다. 그리고 [1, 1, depth]크기의 컨볼루션을 한번 더 수행하여 한 개의 채널 결과값(2차원)을 얻어낸다. 이러한 과정을 수행하는 이유는 연산량을 줄이기 위해서다.
+  - pointwise convolution: 1x1xChannel_size 크기의 filter를 이용하여 컨볼루션을 수행한다. 즉, 다채널 영상을 더 적은 채널의 영상으로 embedding하는 것으로 해석할 수 있다. 채널 수를 줄임으로서 연산량을 줄여 속도를 높일 수 있지만, 중요 정보가 손실 될 수 있다는 단점을 가지고 있다. = Channel Reduction이라고도 한다.
+  - grouped convolution: 여러 개의 채널을 한꺼번에 컨볼루션 수행하지 않고, 채널을 그룹으로 나누어 따로 컨볼루션을 수행 후 다시 합치는 방법이다. 기존의 CNN과 낮은 연산량을 요구하고, 각 그룹에서 채널끼리 상호 관계가 맺어져 학습이 될 수 있다는 특징이 있다. 그리고 병렬 처리에 유리하다는 장점 또한 가지고 있다.
+  - deformable convolution: 단순하게 filter의 weight를 학습하는 것이 아니라 kernel의 모양(kernel offset: sampling grid의 스케일 종횡비, 회전 방식 등)도 함께 학습하는 것이다. 즉 object의 크기에 대해서 유연하게 학습이 가능하다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
