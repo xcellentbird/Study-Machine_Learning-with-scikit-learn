@@ -93,6 +93,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - grouped convolution: 여러 개의 채널을 한꺼번에 컨볼루션 수행하지 않고, 채널을 그룹으로 나누어 따로 컨볼루션을 수행 후 다시 합치는 방법이다. 기존의 CNN과 낮은 연산량을 요구하고, 각 그룹에서 채널끼리 상호 관계가 맺어져 학습이 될 수 있다는 특징이 있다. 그리고 병렬 처리에 유리하다는 장점 또한 가지고 있다.
   - deformable convolution: 단순하게 filter의 weight를 학습하는 것이 아니라 kernel의 모양(kernel offset: sampling grid의 스케일 종횡비, 회전 방식 등)도 함께 학습하는 것이다. 즉 object의 크기에 대해서 유연하게 학습이 가능하다.
   - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.
+  - SiLU(== Swish, Sigmoid Linear Unit): Sigmoid(x)에 입력값x를 곱한 형태이다. (-)방향으로 갈 수록 0에 수렴하고, 복잡성을 가지고 있어, BatchNormalization과 같이 층을 깊게 쌓을 수 있게 해준다.
 </details>
 <details>
   <summary><b>6. About AI </b></summary>
