@@ -68,7 +68,7 @@ loss & lr:
 
 
 3주차 실험 내역:  
-![image](https://user-images.githubusercontent.com/59414764/122451205-d51df180-cfe2-11eb-9c3f-ba6fc9cab15e.png)
+![image](https://user-images.githubusercontent.com/59414764/122453889-ad7c5880-cfe5-11eb-9330-8c8a53118b8c.png)
 
 
 ### 대회 결과
