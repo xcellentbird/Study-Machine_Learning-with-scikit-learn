@@ -4,7 +4,8 @@
 : AI RUSH는 Naver Clova에서 주최하는 AI 모델링 챌린지입니다.
 
 ### 참가 지원
-![image](https://user-images.githubusercontent.com/59414764/122434428-0e9a3100-cfd2-11eb-8624-6413e4f85a72.png)
+![image](https://user-images.githubusercontent.com/59414764/122434428-0e9a3100-cfd2-11eb-8624-6413e4f85a72.png)  
+
 위 일정처럼 자소서 서류로 1차 심사를 보고 2차로 코딩 테스트가 주어졌습니다. Kaggle이라고 해봤자, 타이타닉, 보스턴 집값 예측 기본 문제였고, 그 외 프로젝트라고 하더라도 YOLO와 기초적인 Keras CNN 모델을 
 만드는 것이 전부였습니다만, 서류에 붙게 되었네요! 그리고 얼마 지나지 않아 코딩테스트가 진행되었고, 난이도는 일반 기업의 코딩테스트보다 훨씬 쉬웠습니다~
 
