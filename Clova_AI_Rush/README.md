@@ -50,8 +50,23 @@
 
  그리고 다시 희망을 품고, 연구를 재개하였습니다. cross_entorpy_loss에서 ignore_index 기능이 있다는 것을 알아내었고, 'nothing' class를 계산하지 않도록 적용하였습니다. (평가 방법에서는 실제 -1 class를 어떤 class로 판단하여도 감점이 되지 않는 원리였고, 아무거나 비슷한 것을 찍어 점수를 높이려는 전략이었습니다) 그리고 데이터의 class 불균형 문제를 해결하기 위해 sklearn의 compute_class_weight함수를 사용하여 class weight를 계산하였고, 이를 loss function의 weight에 적용하였습니다. 그리고 feture를 혼합하거나 filter를 서로 붙이는 형식으로 model ensemble을 구현하여 적용하였죠. 기존 efficientnet v2에 rexnet을 ensemble하였고, FLOPS 제한선을 맞추기 위해 moblienet v3와 직접 만든 FCN?(C*224*224 filter, One CNN layer) 모델까지 사용하였습니다. 낮은 성능의 모델일지라도 ensemble 성능 향상에 도움이 된다는 대학원생 분의 팁이 큰 힘이 되었어요. (nfnet을 사용했을 때 점수가 가장 높았지만, 모델에 FLOPS문제가 있어 사용 금지를 당했죠...) 이러한 과정을 통해 점수는 89점까지 도달할 수 있었습니다.
  
- 시도한 것들 중에 가장 희한했던 것은 계층 분류 순서를 바꾸는 것이었습니다. 기존에는 대분류 -> 중분류 -> 소분류 순서로 분류를 했었습니다만, 소분류 -> 중분류 -> 대분류 순서로 분류를 하게 해했을 때 점수가 0.93까지 올라갔어요. 제 예상대로라면 모델의 head에서 대략의 feature를 결정하고 모델이 깊어질 수록 세세한 feature를 알아내도록 하는 것이었지만, 완전 다르게 작동한 것이죠. (제가 실험 중에 모델을 워낙 희한하게 짜서 그런 것일 수도 있을 것 같네요...) 그리고 마지막으로 data augmentation을 실험하고, cutmix를 구현하여 연구를 마무리할 수 있었습니다. 
+ 시도한 것들 중에 가장 희한했던 것은 계층 분류 순서를 바꾸는 것이었습니다. 기존에는 대분류 -> 중분류 -> 소분류 순서로 분류를 했었습니다만, 소분류 -> 중분류 -> 대분류 순서로 분류를 하게 해했을 때 점수가 0.93까지 올라갔어요. 제 예상대로라면 모델의 head에서 대략의 feature를 결정하고 모델이 깊어질 수록 세세한 feature를 알아내도록 하는 것이었지만, 완전 다르게 작동한 것이죠. (제가 실험 중에 모델을 워낙 희한하게 짜서 그런 것일 수도 있을 것 같네요...) 그리고 마지막으로 hyperparameter, data augmentation을 실험하고, cutmix를 구현하여 연구를 마무리할 수 있었습니다. 최종 0.93324점으로 마무리하였습니다.
+ 
+ 연구한 것 중에 한 가지 아쉬운 것이 있다면, 후에 실험하여 알게 된 것인데, cutmix가 과적합에 영향을 미친다는 것이었어요. 처음부터 cutmix를 적용하는 것보다 lr scheduler를 이용하여 일정 epoch에 cutmix를 적용하였을 때 성능이 더 좋아지는 것을 볼 수 있었습니다. 그리고 준지도 학습 모델 noisy student을 구현해보지 못한 게 아쉽게 다가오네요. noise label을 생각 못했던 것도 아쉽네요...
 
-<3주차 실험 내역>
+
+<validation dataset score> (valid dataset의 loss는 코드를 잘못 짠 탓에 저렇게 나왔습니다 ㅠ)  
+![image](https://user-images.githubusercontent.com/59414764/122452344-224e9300-cfe4-11eb-9a2d-6d88dafa6add.png)
+
+ 
+<loss & lr>  
+ ![image](https://user-images.githubusercontent.com/59414764/122452698-807b7600-cfe4-11eb-986e-f6ca79322016.png)
+
+
+<3주차 실험 내역>  
 ![image](https://user-images.githubusercontent.com/59414764/122451205-d51df180-cfe2-11eb-9c3f-ba6fc9cab15e.png)
+
+
+### 대회 결과
+
 
