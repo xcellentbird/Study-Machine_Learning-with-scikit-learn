@@ -55,12 +55,14 @@
  연구한 것 중에 한 가지 아쉬운 것이 있다면, 후에 실험하여 알게 된 것인데, cutmix가 과적합에 영향을 미친다는 것이었어요. 처음부터 cutmix를 적용하는 것보다 lr scheduler를 이용하여 일정 epoch에 cutmix를 적용하였을 때 성능이 더 좋아지는 것을 볼 수 있었습니다. 그리고 준지도 학습 모델 noisy student을 구현해보지 못한 게 아쉽게 다가오네요. noise label을 생각 못했던 것도 아쉽네요...
 
 
-<validation dataset score> (valid dataset의 loss는 코드를 잘못 짠 탓에 저렇게 나왔습니다 ㅠ)  
+<validation dataset score> 
+(valid dataset의 loss는 코드를 잘못 짠 탓에 저렇게 나왔습니다 ㅠ)  
 ![image](https://user-images.githubusercontent.com/59414764/122452344-224e9300-cfe4-11eb-9a2d-6d88dafa6add.png)
 
  
 <loss & lr>  
- ![image](https://user-images.githubusercontent.com/59414764/122452698-807b7600-cfe4-11eb-986e-f6ca79322016.png)
+ ![image](https://user-images.githubusercontent.com/59414764/122453054-e405a380-cfe4-11eb-82ae-8ec168d8f693.png)
+
 
 
 <3주차 실험 내역>  
