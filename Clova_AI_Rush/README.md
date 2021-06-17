@@ -27,7 +27,7 @@
 그리고 1주 동안 Baseline를 토대로 pytorch 모듈을 공부하기 시작했습니다. tensorflow 책은 기초부터 심화까지 다양했지만, pytorch는 책이 얼마 없더라고요.
 일단 '3분 딥러닝 파이토치맛', 'pytorch로 배우는 딥러닝'으로 공부했습니다. Vision & AI 단체 카톡방(제가 주로 정보를 얻는 공간입니다)에서 Efficientnet이 좋다는 말이 기억났고, 찾아보니 version 2가 나왔길레
 바로 모델을 가져다 썼죠. 처음 Baseline을 돌렸을 때는 0.23점이었는데, 바로 0.33점으로 올랐습니다. 뭔가 너무 거저 먹는 거 같아 불안하더라고요. 일단 교수님이 항상 말씀하시던 '알고 쓰는 게 좋아'가 떠올랐고
-바로 Efficient Net에 대한 정보를 얻기 시작했습니다. Efficientnet v1은 https://www.youtube.com/watch?v=5sXQGH9I2VM 동영상으로 빠르게 정보를 얻고, v2는 논문 원서[1]를 보면서 리뷰했죠. 나온 지 얼마 안된
+바로 Efficient Net에 대한 정보를 얻기 시작했습니다. Efficientnet v1은 https://www.youtube.com/watch?v=5sXQGH9I2VM 동영상으로 빠르게 정보를 얻고, v2는 논문 원서를 보면서 리뷰했죠. 나온 지 얼마 안된
 따끈한 논문이었죠. 확실히 최신 기술을 먼저 접한다는 느낌이 어떤 느낌인지 알 것 같습니다 ㅎㅎ 간단하게 축약하자면, 기존 v1은 Model Scaling(Width Scaling + Depth Scaling + Resolution Scaling)을 통해
 모델의 FLOPS 대비 성능을 올렸고, v2는 Progressive Learning(이미지를 학습할 때마다 더 크게 만드는 것)을 사용하여 학습 속도를 증가시켰다는 것입니다.
 
@@ -39,7 +39,7 @@
 
 
 ### 대회 2주차
-1주차 때 배운 지식들을 가지고 Hierarchical Image Classification 모델을 만들기 시작했습니다. 뭔가 대분류를 먼저 하고, 중분류, 소분류 순서대로 분류하도록 하면 되지 않을까 생각했었는데, 역시 사람들은 생각하는 게 다 똑같았던 것 같아요. 'Hierarchical Image Classification'을 키워드로 IEEE에서 논문을 검색했고, HCNN[2], HD-CNN[3]을 접할 수 있었어요. 그리고 이를 토대로 classifier를 제작하려했습니다.   
+1주차 때 배운 지식들을 가지고 Hierarchical Image Classification 모델을 만들기 시작했습니다. 뭔가 대분류를 먼저 하고, 중분류, 소분류 순서대로 분류하도록 하면 되지 않을까 생각했었는데, 역시 사람들은 생각하는 게 다 똑같았던 것 같아요. 'Hierarchical Image Classification'을 키워드로 IEEE에서 논문을 검색했고, HCNN, HD-CNN을 접할 수 있었어요. 그리고 이를 토대로 classifier를 제작하려했습니다.   
  그것보다 문제는 loss function이었어요. 한 개의 label을 분류하는 문제는 접해본 적이 있지만, Multi Label Classification은 해본 적이 없었기 때문이죠. 그리고 '모두의 딥러닝' 강의를 다시 복습하면서 어떻게 해결하는 지 찾기 시작했어요. 그리고 pytorch docs를 뒤져보며, BCELoss 또는 BCEWithLogitsLoss를 쓰면 된다는 것을 알아내었습니다. 그리고 Github에서 다른 사람들은 이 함수를 어떻게 사용하는지 검색해보았어요. 3일이란 시간이 걸리긴했지만, BCEWithLogitsLoss를 겨우겨우 사용할 수 있게 되었고, 점수를 0.46점까지 올릴 수 있었습니다. 뭔가 많이 이상했어요. 데이터에 문제가 없고, 모델만 올바르게 쓰면 일반적으로 정확도 80% 이상은 나올텐데 그에 비해서 터무니 없이 낮은 점수였죠. 분명 어딘가 문제가 있을 것이라 생각했습니다. classifier에 softmax를 넣고 빼기도 해보았고, Baseline코드로 되돌려 코드를 다시 짜보기도 하였어요. 해결되는 것은 없었고, 남은 1주동안 연구하는 것을 포기하고 그냥 Epoch 1000까지 돌려보자는 생각을 하기 시작했습니다. 하루동안 한 것은 validation dataset을 만들어 과적합되는 지만 살펴볼 수 있는 코드를 짠 것 뿐이었습니다. 
 
 
