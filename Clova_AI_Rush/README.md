@@ -7,21 +7,21 @@
 ![image](https://user-images.githubusercontent.com/59414764/122434428-0e9a3100-cfd2-11eb-8624-6413e4f85a72.png)  
 
 위 일정처럼 자소서 서류로 1차 심사를 보고 2차로 코딩 테스트가 주어졌습니다. Kaggle이라고 해봤자, 타이타닉, 보스턴 집값 예측 기본 문제였고, 그 외 프로젝트라고 하더라도 YOLO와 기초적인 Keras CNN 모델을 
-만드는 것이 전부였습니다만, 서류에 붙게 되었네요! 그리고 얼마 지나지 않아 코딩테스트가 진행되었고, 난이도는 일반 기업의 코딩테스트보다 훨씬 쉬웠습니다~
+만드는 것이 전부였습니다만, 운이 좋아 서류에 붙은 것 같아요! 그리고 얼마 지나지 않아 코딩테스트가 진행되었고, 난이도는 일반 기업의 코딩테스트보다 훨씬 쉬웠습니다~
 
 
 ### 대회 시작 전 준비
 저는 영상쪽에 집중하고 싶었던 터라 다른 고민도 하지 않고 1-3 MYBOX 이미지 분류 과제를 선택하게 되었어요. 다른 과제가 더 경쟁이 심하지 않았고, 과제를 바꿀 수 있었음에도 불구하고, 
 '떨어지더라도 하고 싶은 것에 집중하자'는 생각으로 과제를 바꾸지 않았습니다. (다른 과제에 비해 1.5배 정도 경쟁이 더 치열했어요 ㅠ) 그리고 그렇게 마음 먹어서인지 떨어지고 나서 지금까지도 후회하진 않습니다.
 
-시작하기 전에 일단 다른 사람의 리뷰를 살펴보기 시작했습니다. Baseline, model ensemble이라는 용어도 처음 들어봤구요... 이전 참가자분들은 어떠한 실험을 했고, 어떠한 아쉬운 점이 있는지 중점으로 살펴보았습니다.
-정말 후기란 후기는 다 모아 분석했어요. 어떠한 논문을 보셨는지, 어떤 모델, data augmentation을 썼는지, 어떠한 과정부터 진행하는 게 좋은지 등등... 전에는 팀플이었는데
+시작하기 전에 일단 작년 참가자들의 대회 리뷰를 살펴보기 시작했습니다. Baseline, model ensemble이라는 용어도 처음 들어봤구요... 이전 참가자분들은 어떠한 실험을 했고, 어떠한 아쉬운 점이 있는지 중점으로 살펴보았습니다.
+정말 후기란 후기는 다 모아 분석했어요. 어떠한 논문을 보셨는지, 어떤 모델, data augmentation을 썼는지, 어떠한 과정부터 진행하는 게 좋은지 등등...
 
 그리고 Keras CNN 기초 서적('혼공머신')을 3번 정도 복습했던 것 같아요. (과제에서 PyTorch를 써야한다는 것을 모른 체 말이죠...)
 
 
 ### 대회 1주차
-5.17에 OT가 이어졌고, NSML에 대해 설명을 들었어요. 후기에서는 NSML 환경에 적응하는 것도 일이라고 했었는데 그리 힘들지는 않았던 것 같아요. 그리고 Baseline이 주어졌고, 코드가 PyTorch라는 사실을
+5.17에 OT가 이어졌고, NSML에 대해 설명을 들었습니다. 후기에서는 NSML 환경에 적응하는 것도 일이라고 했었는데 그리 힘들지는 않았던 것 같아요. 그리고 Baseline이 주어졌고, 코드가 PyTorch라는 사실을
 알게 됐죠. 그리고 PM님께 Tensorflow 사용할 수 있는지 여쭤보니... 사용할 수 있지만, 여러 이유 때문에 pytorch를 사용하는 것을 권장한다고 말씀하셨죠 ㅠ
 
 그리고 1주 동안 Baseline를 토대로 pytorch 모듈을 공부하기 시작했습니다. tensorflow 책은 기초부터 심화까지 다양했지만, pytorch는 책이 얼마 없더라고요.
@@ -79,3 +79,18 @@ semi-supervised model(noisy student), noise label, auto hyperparameter tuning mo
 조금은 생색을 내자면(ㅋㅋㅋ) 정말 3주동안 하루(쉬는 날)를 제외하고, 점심 쯤에 일어나서 하루종일 책상에 앉아 연구하고 아침이 되면 잠들고를 반복했습니다. 결과는 아쉽지만, 큰 마음먹고 도전한 만큼, 값진 경험을 가져다 준 공모전이었습니다. 모듈에 대한 이해, 수학 지식, 모델에 대한 경험 등 부족한 것이 어떤 것인지 깨닫게 해주었고, '조금 더 공부하면 확실하게 성장할 수 있겠구나'는 생각이 드네요. 무엇보다 'AI 분야에서 일을 해도 괜찮을 것 같다'는, 직업에 대한 확신이 들었습니다. 다른 Kaggle 대회에도 참가해보고 싶네요. 가능하다면 내년에 다시 참가해볼 예정입니다🔥
 
 +) 대회가 아쉬웠던 점은... DM을 통해 Naver AI 현업 개발자와 교류할 수 있다는 내용도 있었지만, 막상 PM님들께 메세지를 보냈을 때, 바쁘셨던 건지... 메세지를 보지 않거나, 3~5일 후에 답장이 온다는 점이 정말 아쉬웠습니다...
+
+
+### 참고 논문
+[1] Convolutional Network Model using Hierarchical Prediction and its Application in Clothing Image Classification
+[2] CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features
+[3] EfficientNetV2: Smaller Models and Faster Training
+[4] ImageNet: A Large-Scale Hierarchical Image Database
+[5] Size Matters
+[6] Meta Pseudo Labels
+[7] High-Performance Large-Scale Image Recognition Without Normalization
+[8] An overview of gradient descent optimization algorithms
+[9] SELF: LEARNING TO FILTER NOISY LABELS WITH SELF-ENSEMBLING
+[10] VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION
+[11] HD-CNN: Hierarchical Deep Convolutional Neural Networks for Large Scale Visual Recognition
+[12] 효율적인 사물 이미지 분류를 위한 계층적 이미지 분류 체계의 설계 및 구현
