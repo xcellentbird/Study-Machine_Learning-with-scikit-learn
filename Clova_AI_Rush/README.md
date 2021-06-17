@@ -114,4 +114,5 @@ semi-supervised model(noisy student), noise label, auto hyperparameter tuning mo
 [12] 효율적인 사물 이미지 분류를 위한 계층적 이미지 분류 체계의 설계 및 구현  
 [13] Self-training with Noisy Student improves ImageNet classification  
 [14] ReXNet: Diminishing Representational Bottleneck on Convolutional Neural Network  
+[15] Searching for MobileNetV3  
 
