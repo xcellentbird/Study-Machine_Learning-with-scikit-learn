@@ -57,6 +57,7 @@
  
  <validation dataset score>  
 valid dataset의 loss는 잘못 나왔습니다 ㅠ    
+ 
  ![image](https://user-images.githubusercontent.com/59414764/122453145-fd0e5480-cfe4-11eb-8890-1be920924aee.png)
 
 
