@@ -4,14 +4,14 @@
 # Clova AI Rush 2021
 : AI RUSH는 Naver Clova에서 주최하는 AI 모델링 챌린지입니다.
 
-### 참가 지원
+## 지원서 제출 및 참가 신청
 ![image](https://user-images.githubusercontent.com/59414764/122434428-0e9a3100-cfd2-11eb-8624-6413e4f85a72.png)  
 
 위 일정처럼 자소서 서류로 1차 심사를 보고 2차로 코딩 테스트가 주어졌습니다. Kaggle이라고 해봤자, 타이타닉, 보스턴 집값 예측 기본 문제였고, 그 외 프로젝트라고 하더라도 YOLO와 기초적인 Keras CNN 모델을 
 만드는 것이 전부였습니다만, 운이 좋아 서류에 붙은 것 같아요! 그리고 얼마 지나지 않아 코딩테스트가 진행되었고, 난이도는 일반 기업의 코딩테스트보다 훨씬 쉬웠습니다~
 
 
-### 대회 시작 전 준비
+## 대회 시작 전 준비
 
 ![image](https://user-images.githubusercontent.com/59414764/122460406-0a2f4180-cfed-11eb-8858-ee2e718b5e99.png)
 
@@ -24,7 +24,7 @@
 그리고 Keras CNN 기초 서적('혼공머신')을 3번 정도 복습했던 것 같아요. (과제에서 PyTorch를 써야한다는 것을 모른 체 말이죠...)
 
 
-### 대회 1주차
+## 대회 1주차
 5.17에 OT가 이어졌고, NSML에 대해 설명을 들었습니다. 후기에서는 NSML 환경에 적응하는 것도 일이라고 했었는데 그리 힘들지는 않았던 것 같아요. 그리고 Baseline이 주어졌고, 코드가 PyTorch라는 사실을
 알게 됐죠. 그리고 PM님께 Tensorflow 사용할 수 있는지 여쭤보니... 사용할 수 있지만, 여러 이유 때문에 pytorch를 사용하는 것을 권장한다고 말씀하셨죠 ㅠ
 
@@ -42,14 +42,14 @@
 괜히 리더 보드를 보면 우울해지는 것 같아 이때부터 안 봤던 것 같아요.
 
 
-### 대회 2주차
+## 대회 2주차
 1주차 때 배운 지식들을 가지고 Hierarchical Image Classification 모델을 만들기 시작했습니다. 뭔가 대분류를 먼저 하고, 중분류, 소분류 순서대로 분류하도록 하면 되지 않을까 생각했었는데, 역시 사람들은 생각하는 게 다 똑같았던 것 같아요. 'Hierarchical Image Classification'을 키워드로 IEEE에서 논문을 검색했고, HCNN, HD-CNN을 접할 수 있었어요. 그리고 이를 토대로 classifier를 제작하려했습니다.   
 
  그것보다 문제는 loss function이었어요. 한 개의 label을 분류하는 문제는 접해본 적이 있지만, Multi Label Classification은 해본 적이 없었기 때문이죠. 그리고 '모두의 딥러닝' 강의를 다시 복습하면서 어떻게 해결하는 지 찾기 시작했어요. 그리고 pytorch docs를 뒤져보며, BCELoss 또는 BCEWithLogitsLoss를 쓰면 된다는 것을 알아내었습니다. 그리고 Github에서 다른 사람들은 이 함수를 어떻게 사용하는지 검색해보았어요. 3일이란 시간이 걸리긴했지만, BCEWithLogitsLoss를 겨우겨우 사용할 수 있게 되었고, 점수를 0.46점까지 올릴 수 있었습니다. 
  뭔가 많이 이상했어요. 데이터에 문제가 없고, 모델만 올바르게 쓰면 일반적으로 정확도 80% 이상은 나올텐데 그에 비해서 터무니 없이 낮은 점수였죠. 분명 어딘가 문제가 있을 것이라 생각했습니다. classifier에 softmax를 넣고 빼기도 해보았고, Baseline코드로 되돌려 코드를 다시 짜보기도 하였어요. 해결되는 것은 없었고, 남은 1주동안 연구하는 것을 포기하고 그냥 Epoch 1000까지 돌려보자는 생각을 하기 시작했습니다. 하루동안 한 것은 validation dataset을 만들어 과적합되는 지만 살펴볼 수 있는 코드를 짠 것 뿐이었습니다. 
 
 
-### 대회 3주차
+## 대회 3주차
 포기할까 하던 와중에, Baseline에서 3계층 분류에 Cross Entropy Loss function 3개가 선언되어 있던 게 생각났어요. (하지만 Baseline 코드에서 실제적으로 계산에 사용됐던 건 1개의 loss function뿐) 이처럼 3개의 loss function을 사용하여 각각 대분류, 중분류, 소분류에 써보자는 생각을 하게 됐습니다. 그리고 더해서 'nothing'(아무것도 아님)을 뜻하는 -1 class도 중분류, 소분류 계층에 추가하였습니다. 이렇게 다시 Github와 pytorch doc을 참고하여 연구하면서 하루를 다 써 코드를 완성하였습니다. 그리고 성적은 단번에 0.81점을 기록하였어요. (아직까지도 왜 그렇게 단번에 점수가 올랐던 것인지 이해하지 못했습니다...)  
 
  그리고 다시 희망을 품고, 연구를 재개하였습니다. cross_entorpy_loss에서 ignore_index 기능이 있다는 것을 알아내었고, 'nothing' class를 계산하지 않도록 적용하였습니다. (평가 방법에서는 실제 -1 class를 어떤 class로 판단하여도 감점이 되지 않는 원리였고, 아무거나 비슷한 것을 찍어 점수를 높이려는 전략이었습니다) 그리고 데이터의 class 불균형 문제를 해결하기 위해 sklearn의 compute_class_weight함수를 사용하여 class weight를 계산하였고, 이를 loss function의 weight에 적용하였습니다. 그리고 feture를 혼합하거나 filter를 서로 붙이는 형식으로 model ensemble을 구현하여 적용하였죠. 기존 efficientnet v2에 rexnet을 ensemble하였고, FLOPS 제한선을 맞추기 위해 moblienet v3와 직접 만든 FCN?(C*224*224 filter, One CNN layer) 모델까지 사용하였습니다. 낮은 성능의 모델일지라도 ensemble 성능 향상에 도움이 된다는 대학원생 분의 팁이 큰 힘이 되었어요. (nfnet을 사용했을 때 점수가 가장 높았지만, 모델에 FLOPS문제가 있어 사용 금지를 당했죠...) 이러한 과정을 통해 점수는 89점까지 도달할 수 있었습니다.
@@ -75,7 +75,7 @@ loss & lr:
 ![image](https://user-images.githubusercontent.com/59414764/122453889-ad7c5880-cfe5-11eb-9330-8c8a53118b8c.png)
 
 
-### 대회 결과 및 피드백, 느낀점
+## 대회 결과 및 피드백, 느낀점
 아쉽게도 0.0046점 차이로 2라운드에 진출하지 못했습니다. (1등은 0.9606점) 실험해보지 못한 것이 많아 많이 아쉽게 느껴지네요. PyTorch를 제대로 이해하고 시작했다면 1등을 할 수 있었을까요?
 0.9333 점수가 높아보이긴 하지만, 실제 대회에서는 0.001점도 매우 크다고 들었습니다. 아직 많이 부족한 점수일 지도 모르겠네요.
 semi-supervised model(noisy student), noise label, auto hyperparameter tuning module, 제대로된 model ensemble 등 아직 해보지 않은 것이 많아 너무 아쉽게 느껴집니다.
