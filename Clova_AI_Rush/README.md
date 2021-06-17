@@ -82,15 +82,18 @@ semi-supervised model(noisy student), noise label, auto hyperparameter tuning mo
 
 
 ### 참고 논문
-[1] Convolutional Network Model using Hierarchical Prediction and its Application in Clothing Image Classification
-[2] CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features
-[3] EfficientNetV2: Smaller Models and Faster Training
-[4] ImageNet: A Large-Scale Hierarchical Image Database
-[5] Size Matters
-[6] Meta Pseudo Labels
-[7] High-Performance Large-Scale Image Recognition Without Normalization
-[8] An overview of gradient descent optimization algorithms
-[9] SELF: LEARNING TO FILTER NOISY LABELS WITH SELF-ENSEMBLING
-[10] VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION
-[11] HD-CNN: Hierarchical Deep Convolutional Neural Networks for Large Scale Visual Recognition
-[12] 효율적인 사물 이미지 분류를 위한 계층적 이미지 분류 체계의 설계 및 구현
+[1] Convolutional Network Model using Hierarchical Prediction and its Application in Clothing Image Classification  
+[2] CutMix: Regularization Strategy to Train Strong Classifiers with Localizable Features  
+[3] EfficientNetV2: Smaller Models and Faster Training  
+[4] ImageNet: A Large-Scale Hierarchical Image Database  
+[5] Size Matters  
+[6] Meta Pseudo Labels  
+[7] High-Performance Large-Scale Image Recognition Without Normalization  
+[8] An overview of gradient descent optimization algorithms  
+[9] SELF: LEARNING TO FILTER NOISY LABELS WITH SELF-ENSEMBLING  
+[10] VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION  
+[11] HD-CNN: Hierarchical Deep Convolutional Neural Networks for Large Scale Visual Recognition  
+[12] 효율적인 사물 이미지 분류를 위한 계층적 이미지 분류 체계의 설계 및 구현  
+[13] Self-training with Noisy Student improves ImageNet classification  
+[14] ReXNet: Diminishing Representational Bottleneck on Convolutional Neural Network  
+
