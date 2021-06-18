@@ -16,7 +16,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
    [저자 블로그](https://tensorflow.blog/hg-mldl/)
 </details>
 <details>
-  <summary><b>3. Tensorflow/ Keras/ scikit-learn </b></summary>
+  <summary><b>3. PyTorch/ scikit-learn </b></summary>
   
   - API, 함수 모음집
     <details>
