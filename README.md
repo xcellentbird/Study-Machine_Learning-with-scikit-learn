@@ -1,12 +1,9 @@
 # Machine_Learning 
 
 Machine Learning, Deep Learning 공부를 위한 공간입니다.
-<details>
-  <summary><b>1. KDT AI Dev-Course </b></summary>
 
-</details>
 <details>
-  <summary><b>2. 책 - 혼공머신 </b></summary>
+  <summary><b>1. 책 - 혼공머신 </b></summary>
   
   ![image](https://user-images.githubusercontent.com/59414764/115765205-70c72300-a3e1-11eb-96d1-5a93638f41da.png)
   
@@ -16,7 +13,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
    [저자 블로그](https://tensorflow.blog/hg-mldl/)
 </details>
 <details>
-  <summary><b>3. PyTorch/ scikit-learn </b></summary>
+  <summary><b>2. PyTorch/ scikit-learn </b></summary>
   
   - API, 함수 모음집
     <details>
@@ -40,10 +37,10 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
     </details>
 </details>
 <details>
-  <summary><b>4. 기계학습 - 강의 복습 노트 </b></summary>
+  <summary><b>3. 기계학습 - 강의 복습 노트 </b></summary>
 </details>
 <details>
-  <summary><b>5. 용어사전 </b></summary>
+  <summary><b>4. 용어사전 </b></summary>
   
   - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다). 
   
@@ -96,7 +93,7 @@ Machine Learning, Deep Learning 공부를 위한 공간입니다.
   - SiLU(== Swish, Sigmoid Linear Unit): Sigmoid(x)에 입력값x를 곱한 형태이다. (-)방향으로 갈 수록 0에 수렴하고, 복잡성을 가지고 있어, BatchNormalization과 같이 층을 깊게 쌓을 수 있게 해준다.
 </details>
 <details>
-  <summary><b>6. About AI </b></summary>
+  <summary><b>7. About AI </b></summary>
   
   [실리콘밸리의 ML옵스 가이드 리뷰](https://github.com/xcellentbird/Deep_Learning/blob/main/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)  
   
