@@ -1,7 +1,7 @@
 # STUDY  
 🔥🔥  
 
----
+===  
 # DICTIONARY  
 <details>
   <summary><b>AI</b></summary> 
