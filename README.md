@@ -6,32 +6,6 @@
 # TIL
 <details>
   <summary><b>AI</b></summary>
-  <details>
-    <summary><b>1. 책 - 혼공머신 </b></summary>
-
-    ![image](https://user-images.githubusercontent.com/59414764/115765205-70c72300-a3e1-11eb-96d1-5a93638f41da.png)
-
-    정말 기초 개념 혼자서 공부하기 좋은 책!  
-    학교 수업을 복습하기엔 딱이었다.  
-     [folder Link](https://github.com/xcellentbird/Deep_Learning/tree/main/%ED%98%BC%EA%B3%B5%EB%A8%B8%EC%8B%A0)  
-     [저자 블로그](https://tensorflow.blog/hg-mldl/)
-  </details>
-  <details>
-    <summary><b>2. PyTorch/ scikit-learn </b></summary>
-
-    - API, 함수 모음집
-      <details>
-        <summary><b>Pytorch</b></summary>
-        - require_grad parameter를 True로 설정하면 자동으로 변화도(미분)를 계산(update)한다는 것이다. 반대로 False로 설정하면 update하지 않는다는 것. 주로 test과정에서는 weight가 update할 필요 없으므로 False로 설정. backward()에 의해 계산(미분)이 시작된다.    
-        - optimizer.zero_grad()는, 최적화기에 grad기울기가 쌓여 엉뚱한 방향으로 최적화 되는 것을 막아준다. model도 학습을 위해서 써주기도 한다.       
-        - nn.Sequential()과 forward(): 두가지 모두 모델을 설계를 위한 프레임이다. forward는 선언했었던 모델의 각 층을 실행 순서대로 정렬해주는 역할을 한다. Sequential은 초기에 선언과 동시에 정렬하면서 넣어야한다.       
-      </details>
-      <details>
-        <summary><b>Tensorflow</b></summary>
-      </details>
-      <details>
-        <summary><b>Keras</b></summary>
-      </details>
       <details>
         <summary><b>scikit-learn</b></summary>
 
@@ -123,5 +97,4 @@
     ![PID_Compensation_Animated](https://user-images.githubusercontent.com/59414764/115999012-fd155800-a624-11eb-86b1-1cc614916506.gif)
 
     - Batch_Size가 학습에 어떤 영향을 미치는지? 배치 사이즈가 커질수록, 조금 더 명확한 최적화 기울기를 얻을 수 있다. 하지만 평평한 경우 안장점(saddle point)에 빠질 위험이 있다. 반대로 배치 사이즈가 작은 경우, 부정확한 기울기를 사용한다는 단점이 있지만, 적은 계산 비용이 들어가므로 한번의 업데이트 동안 여러번 업데이트가 가능하다. 기울기 낮은 공간에서 안장점을 쉽게 빠져나갈 수 있다. 이렇게 장단점이 있지만, 주로 효율성을 위해 배치 사이즈를 메모리 가능한 크게 사용한다. 결과가 크게 다르지 않고, 크게 할 경우, 업데이트 계산 비용을 절약할 수 있기 때문이다.
-  </details>
 </details>
