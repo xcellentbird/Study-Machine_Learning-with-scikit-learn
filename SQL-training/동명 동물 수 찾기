@@ -1,0 +1,6 @@
+-- 그룹을 이룬다는 것은 집합 또는 폴더를 만드는 것과 같다.
+SELECT NAME, COUNT(NAME) 
+FROM ANIMAL_INS 
+GROUP BY NAME -- NAME 기준으로 그룹화 하되,
+HAVING COUNT(NAME) >= 2 -- COUNT(NAME)이 2개 이상인 그룹만
+ORDER BY NAME
