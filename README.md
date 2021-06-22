@@ -1,7 +1,5 @@
-# STUDY  
-hard🔥   
-   
-   
+# STUDY HARD🔥   
+
 # DICTIONARY  
 <details>
   <summary><b>AI</b></summary>  
