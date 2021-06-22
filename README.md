@@ -121,32 +121,32 @@
   <details>
     <summary><b>명령어 모음</b></summary>
     
-      - man: 메뉴얼 출력
-      - sudo: 관리자 권한 부여
-      - apt-get(advanced packaging tool): 패키지 관리 명령어 도구
-      - $ sudo apt-get update : 패키지 인덱스 정보 업데이트
-      - $ sudo apt-get upgrade : 설치된 패키지 업그레이드
-      - $ sudo apt-get install <PACKATE_NAME> : 패키지 설치
-      - wget: 웹 링크를 통한 압축 파일 다운로드 도구
-      - $ wget <Web Address>
-      - rpm: 윈도우에서의 setup.exe와 같은 기능. 실행파일, 설정파일 라이브러리 등이 하나로 묶인 rpm파일을 풀어주는 역할을 한다.
-      - chmod: 파일 및 디렉토리의 읽기, 쓰기, 실행 권한 변경. 자세한 설명은 https://blog.naver.com/pk3152/221329487611
-      - unmask: 파일이 만들어질 때 권한을 부여
-      - mkdir: 디렉토리 생성. 
-      ↳ -p: 하위 디렉토리까지 한번에 생성
-      - rmdir: 비어있는 디렉토리 삭제
-      - .sh 파일: 쉘 스크립트 = 명령어 메크로
-      - cd: 디렉토리 이동
-      - pwd: 현재 디렉토리 위치
-      - ls: 파일 목록 출력
-      ↳ -al: 파일 목록 상세 출력
-      - cat: 파일 내용 출력
-      - rm: 파일 및 폴더 삭제
-      ↳ -r: 디렉토리 삭제
-      - find or locate: 특정 파일 찾기
-      - source: 수정한 스크립트 적용시키기
-      - cp <FILENAME>: 파일 복사
-      ↳ -r <DIRECTORY>: 디렉토리 복사
+    - man: 메뉴얼 출력
+    - sudo: 관리자 권한 부여
+    - apt-get(advanced packaging tool): 패키지 관리 명령어 도구
+    - $ sudo apt-get update : 패키지 인덱스 정보 업데이트
+    - $ sudo apt-get upgrade : 설치된 패키지 업그레이드
+    - $ sudo apt-get install <PACKATE_NAME> : 패키지 설치
+    - wget: 웹 링크를 통한 압축 파일 다운로드 도구
+    - $ wget <Web Address>
+    - rpm: 윈도우에서의 setup.exe와 같은 기능. 실행파일, 설정파일 라이브러리 등이 하나로 묶인 rpm파일을 풀어주는 역할을 한다.
+    - chmod: 파일 및 디렉토리의 읽기, 쓰기, 실행 권한 변경. 자세한 설명은 https://blog.naver.com/pk3152/221329487611
+    - unmask: 파일이 만들어질 때 권한을 부여
+    - mkdir: 디렉토리 생성. 
+    ↳ -p: 하위 디렉토리까지 한번에 생성
+    - rmdir: 비어있는 디렉토리 삭제
+    - .sh 파일: 쉘 스크립트 = 명령어 메크로
+    - cd: 디렉토리 이동
+    - pwd: 현재 디렉토리 위치
+    - ls: 파일 목록 출력
+    ↳ -al: 파일 목록 상세 출력
+    - cat: 파일 내용 출력
+    - rm: 파일 및 폴더 삭제
+    ↳ -r: 디렉토리 삭제
+    - find or locate: 특정 파일 찾기
+    - source: 수정한 스크립트 적용시키기
+    - cp <FILENAME>: 파일 복사
+    ↳ -r <DIRECTORY>: 디렉토리 복사
     
   </details>
     
