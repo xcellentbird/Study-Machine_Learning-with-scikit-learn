@@ -1,12 +1,7 @@
 # STUDY
-AI: Machine Learning, Deep Learning  
-Algorigthm-training: 알고리즘 문제 연습장  
-Android  
-Computer Vision: Color Transform부터 Optical Flow까지    
-SQL-training: SQL 문제 연습장
-    
+언제든 꺼내볼 수 있도록 꾸준하게🔥  
   
-SQL-training
+  
 ---
 # TIL
 <details>
