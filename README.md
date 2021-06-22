@@ -1,9 +1,5 @@
 # STUDY  
 🔥🔥
-  
-===
-
----
 
 # DICTIONARY  
 <details>
