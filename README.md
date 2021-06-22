@@ -1,6 +1,6 @@
 # STUDY HARD🔥   
 
-# DICTIONARY  
+## DICTIONARY  
 <details>
   <summary><b>AI</b></summary>  
   
