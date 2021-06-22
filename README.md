@@ -1,4 +1,4 @@
-# STUDY
+# STUDY  
 🔥🔥  
 ---
 # TIL  
