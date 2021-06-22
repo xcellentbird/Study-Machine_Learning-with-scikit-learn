@@ -1,5 +1,5 @@
 # STUDY  
-hard�   
+hard🔥   
 
 # DICTIONARY  
 <details>
