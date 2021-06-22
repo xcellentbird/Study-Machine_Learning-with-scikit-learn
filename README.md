@@ -57,3 +57,50 @@
     - Batch_Size가 학습에 어떤 영향을 미치는지? 배치 사이즈가 커질수록, 조금 더 명확한 최적화 기울기를 얻을 수 있다. 하지만 평평한 경우 안장점(saddle point)에 빠질 위험이 있다. 반대로 배치 사이즈가 작은 경우, 부정확한 기울기를 사용한다는 단점이 있지만, 적은 계산 비용이 들어가므로 한번의 업데이트 동안 여러번 업데이트가 가능하다. 기울기 낮은 공간에서 안장점을 쉽게 빠져나갈 수 있다. 이렇게 장단점이 있지만, 주로 효율성을 위해 배치 사이즈를 메모리 가능한 크게 사용한다. 결과가 크게 다르지 않고, 크게 할 경우, 업데이트 계산 비용을 절약할 수 있기 때문이다.
   </details>  
 </details>
+
+<details>
+  <summary><b>Linus</b></summary>
+  
+  <details>
+    <summary><b>용어</b></summary>
+    
+    - Shell: 커널(Kernel)과 사용자 간의 다리 역할. 사용자로부터 명령을 받아 해서하고 프로그램을 실행시킴.
+    - sh: 최초의 쉘
+    - bash: GNU에서 무료로 배포한 업그레이드 쉘. 리눅스의 기본 쉘
+    
+  </details>
+  
+  <details>
+    <summary><b>명령어 모음</b></summary>
+    
+      - man: 메뉴얼 출력
+      - sudo: 관리자 권한 부여
+      - apt-get(advanced packaging tool): 패키지 관리 명령어 도구
+      - $ sudo apt-get update : 패키지 인덱스 정보 업데이트
+      - $ sudo apt-get upgrade : 설치된 패키지 업그레이드
+      - $ sudo apt-get install <PACKATE_NAME> : 패키지 설치
+      - wget: 웹 링크를 통한 압축 파일 다운로드 도구
+      - $ wget <Web Address>
+      - rpm: 윈도우에서의 setup.exe와 같은 기능. 실행파일, 설정파일 라이브러리 등이 하나로 묶인 rpm파일을 풀어주는 역할을 한다.
+      - chmod: 파일 및 디렉토리의 읽기, 쓰기, 실행 권한 변경. 자세한 설명은 https://blog.naver.com/pk3152/221329487611
+      - unmask: 파일이 만들어질 때 권한을 부여
+      - mkdir: 디렉토리 생성. 
+      ↳ -p: 하위 디렉토리까지 한번에 생성
+      - rmdir: 비어있는 디렉토리 삭제
+      - .sh 파일: 쉘 스크립트 = 명령어 메크로
+      - cd: 디렉토리 이동
+      - pwd: 현재 디렉토리 위치
+      - ls: 파일 목록 출력
+      ↳ -al: 파일 목록 상세 출력
+      - cat: 파일 내용 출력
+      - rm: 파일 및 폴더 삭제
+      ↳ -r: 디렉토리 삭제
+      - find or locate: 특정 파일 찾기
+      - source: 수정한 스크립트 적용시키기
+      - cp <FILENAME>: 파일 복사
+      ↳ -r <DIRECTORY>: 디렉토리 복사
+    
+  </details>
+</details>
+
+  
