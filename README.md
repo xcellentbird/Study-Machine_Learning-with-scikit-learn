@@ -1,10 +1,10 @@
 # STUDY
-AI: Machine Learning, Deep Learning
-Algorigthm-training: 알고리즘 풀이 연습장
-Android
-Computer Vision: Color Transform부터 Optical Flow까지  
+AI: Machine Learning, Deep Learning  
+Algorigthm-training: 알고리즘 풀이 연습장  
+Android  
+Computer Vision: Color Transform부터 Optical Flow까지    
+    
   
-
 SQL-training
 ---
 # TIL
