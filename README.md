@@ -2,31 +2,22 @@
 🔥🔥  
 
 ---
-# TIL  
-<details>  
-  <summary><b>AI</b></summary>  
-  
-  <details>  
+# DICTIONARY  
+<details>
+  <summary><b>AI</b></summary> 
+  <details>   
     <summary><b>4. 용어사전 </b></summary>  
-    - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다). 
 
+    - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다)
     - semi-supervised learning(준지도학습): 지도학습에서 레이블링 작업에 대한 시간과 비용을 줄이고자 나온 방법. 일부만을 레이블링하고(AI에 힌트와 예시를 던져주고), 나머지 데이터는 unsupervised learning(혼자서 깨우치도록)하도록 만든다. [관련 논문 리뷰](https://blog.est.ai/2020/11/ssl/)  
-
     - 온라인 학습에서는 새로운 데이터를 mini-batch 작은 묶음으로 묶어, 시스템을 점진적으로 훈련시킵니다. 반면 오프라인 학습(=out-of-core learning)은 데이터를 모두 한꺼번에 훈련시켜야하므로, 시간과 자원이 많이 필요합니다. Batch Learning이라고도 합니다.
-
     - 머신러닝 시스템에서의 일반화(Generalization)란? 훈련 데이터에서 본 적 없는, 새로운 데이터에서 좋은 예측을 만드는 것 (핸즈온 ML)  
-
     - 사례 기반 학습(instance-based learning): 시스템이 훈련 샘플을 기억함으로써 학습하는 방법. 유사도 측정을 사용해 새로운 데이터와 학습한 데이터를 비교하는 방식으로 일반화한다.  
-
     - 샘플링 잡음(sampling noise): 데이터 샘플이 작아, 데이터가 대표성을 띄지 못 하는 것.
     - 샘플링 편향(sampling bias): 편향된 데이터 샘플이 너무 커서 데이터가 대표성을 띄지 못하는 것
-
     - 특성 공학(feature engineering): 훈련에 가장 유용한 특성을 선택하고(feature selection), 특성을 결합하여 더 유용한 특성을 만들어(feature extraction), 훈련에 좋은 특성을 만들어내는 것
-
     - 규제(regularzation): 모델을 단순하게 하고 과대적합의 위험을 감소시키기 위해, 모델에 제약을 가하는 것. 자유도를 줄이는 것. ex) 선형 모델(Wx + b)에서 b를 고정시키거나, 범위를 정한다.
-
     - 교차 검증(cross-validation): 학습할 데이터에서 여러 개의 검증 데이터셋으로 나누고, 검증 세트마다 나머지 데이터에서 훈련한 모델을 해당 검증 세트에서 평가하도록 하는 것. 단점으로, 검증 세트가 많아 훈련 시간이 길다.  
-
     - Data Augumentation: 기존의 데이터를 이용하여 새로운 데이터를 만드는 것. 이미지를 예로 들자면, 이미지를 뒤집거나, 명암을 바꿀 수 있다. 이를 통해 사물의 좌우 바뀐 모습도 인식할 수 있게 되고, 명암에도 robust하게 된다.
     - model ensemble(모델 앙상블): 서로 다른 모델들을 함께 사용하여 기존보다 성능을 더 올리는 방법 Bagging과 Boosting이 있다.
     - ensemble _ bagging:
@@ -57,32 +48,11 @@
     - deformable convolution: 단순하게 filter의 weight를 학습하는 것이 아니라 kernel의 모양(kernel offset: sampling grid의 스케일 종횡비, 회전 방식 등)도 함께 학습하는 것이다. 즉 object의 크기에 대해서 유연하게 학습이 가능하다.
     - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.
     - SiLU(== Swish, Sigmoid Linear Unit): Sigmoid(x)에 입력값x를 곱한 형태이다. (-)방향으로 갈 수록 0에 수렴하고, 복잡성을 가지고 있어, BatchNormalization과 같이 층을 깊게 쌓을 수 있게 해준다.
-  </details>
-  <details>
-    <summary><b>7. About AI </b></summary>
-
-    [실리콘밸리의 ML옵스 가이드 리뷰](https://github.com/xcellentbird/Deep_Learning/blob/main/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)  
-
-    ML의 평가
-    - 분류 모델 측면 - 정확도(Accuracy) = 예측 결과가 실제와 동일한 데이터 건수 / 전체 예측 데이터 건수.  
-    ![image](https://user-images.githubusercontent.com/59414764/115999361-5467f800-a626-11eb-94b3-4fd9cdf463e8.png)
-
-
-  </details>
-  <details>
-    <summary><b>+) TMI </b></summary>
-
-    - 경량화, 추론 속도 한계가 있을 때는, Tensorrt나 Onnx로 변환시켜 최적화 시킬 수 있다. 하지만 호환되지 않는 몇 함수가 있으므로 확인 후 사용해야한다.
     - Tensorrt: NVDIA GPU를 이용한 모델 최적화 엔진 인터페이스 - https://developer.nvidia.com/tensorrt
     - Onnx: Tensorflow, PyTorch에서 만든 모델들을 export하고, 서로 각 프레임워크 환경 또는 모바일 환경에서 import하여 호환 사용을 가능하게 한다. - https://github.com/onnx/onnx
-
-    - PID제어 기법과 딥러닝은 어느 정도 연관성이 있지 않을까? 주로 PID Gain값을 ML을 이용하여 잡아주는 식으로 사용된다.
-
-    ![image](https://user-images.githubusercontent.com/59414764/115998955-c4757e80-a624-11eb-8ebc-bfce97b0dc0d.png)  
-
-    ![image](https://user-images.githubusercontent.com/59414764/115998960-cb03f600-a624-11eb-9ac8-6d375ec79584.png)  
-
-    ![PID_Compensation_Animated](https://user-images.githubusercontent.com/59414764/115999012-fd155800-a624-11eb-86b1-1cc614916506.gif)
+  </details>
+  <details>
+  <summary><b>Tips</b></summary>
 
     - Batch_Size가 학습에 어떤 영향을 미치는지? 배치 사이즈가 커질수록, 조금 더 명확한 최적화 기울기를 얻을 수 있다. 하지만 평평한 경우 안장점(saddle point)에 빠질 위험이 있다. 반대로 배치 사이즈가 작은 경우, 부정확한 기울기를 사용한다는 단점이 있지만, 적은 계산 비용이 들어가므로 한번의 업데이트 동안 여러번 업데이트가 가능하다. 기울기 낮은 공간에서 안장점을 쉽게 빠져나갈 수 있다. 이렇게 장단점이 있지만, 주로 효율성을 위해 배치 사이즈를 메모리 가능한 크게 사용한다. 결과가 크게 다르지 않고, 크게 할 경우, 업데이트 계산 비용을 절약할 수 있기 때문이다.
   </details>  
