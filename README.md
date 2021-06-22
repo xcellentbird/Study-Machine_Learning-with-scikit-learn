@@ -4,10 +4,10 @@
   
 ---
 # TIL
-<details>
-  <summary><b>AI</b></summary>
-  <details>
-    <summary><b>4. 용어사전 </b></summary>
+<details>  
+  <summary><b>AI</b></summary>  
+  <details>  
+    <summary><b>4. 용어사전 </b></summary>  
     - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다). 
 
     - semi-supervised learning(준지도학습): 지도학습에서 레이블링 작업에 대한 시간과 비용을 줄이고자 나온 방법. 일부만을 레이블링하고(AI에 힌트와 예시를 던져주고), 나머지 데이터는 unsupervised learning(혼자서 깨우치도록)하도록 만든다. [관련 논문 리뷰](https://blog.est.ai/2020/11/ssl/)  
@@ -85,4 +85,4 @@
     ![PID_Compensation_Animated](https://user-images.githubusercontent.com/59414764/115999012-fd155800-a624-11eb-86b1-1cc614916506.gif)
 
     - Batch_Size가 학습에 어떤 영향을 미치는지? 배치 사이즈가 커질수록, 조금 더 명확한 최적화 기울기를 얻을 수 있다. 하지만 평평한 경우 안장점(saddle point)에 빠질 위험이 있다. 반대로 배치 사이즈가 작은 경우, 부정확한 기울기를 사용한다는 단점이 있지만, 적은 계산 비용이 들어가므로 한번의 업데이트 동안 여러번 업데이트가 가능하다. 기울기 낮은 공간에서 안장점을 쉽게 빠져나갈 수 있다. 이렇게 장단점이 있지만, 주로 효율성을 위해 배치 사이즈를 메모리 가능한 크게 사용한다. 결과가 크게 다르지 않고, 크게 할 경우, 업데이트 계산 비용을 절약할 수 있기 때문이다.
-</details>
+</details>  
