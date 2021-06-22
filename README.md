@@ -65,7 +65,13 @@
     
     - backpropagation(역전파): 예측값과 실제값의 오차를 이용하여 가중치를 개선하는 과정
     
-    - activation function(활성화 함수)의 종류: Sigmoid(0 or 1, Deep하게 사용하면 기울기가 사라지는 단점), tanh(-1 or 1, Sigmoid보다는 덜하지만 여전히 Gradient Vanishing 존재), ReLU(0 or input, 기울기가 0또는 1이므로 Gradient Vanishing발생 X, exp지수함수가 없어 tanh,sigmoid보다 연산량 6배 빠르다. 하지만 다음 layer가 있을 경우 출력값이 모두 0이 되는 현상이 있다), Leaky ReLU(0.1x or x, alpha를 보통 0.1로 설정. ReLU의 한계점 보완), Maxout, ELU(a(e^x-1) or x, exponential linear unit. alpha2도 설정 가능하다. 지수함수가 있어 속도가 빠르지 않은편), PReLU(parametric rectified linear unit. ax or x, Leaky LeLU와 비슷하지만 alpha가 학습 가능한 parameter이다)
+    - activation function(활성화 함수)의 종류:
+      Sigmoid(0 or 1, Deep하게 사용하면 기울기가 사라지는 단점)
+      tanh(-1 or 1, Sigmoid보다는 덜하지만 여전히 Gradient Vanishing 존재)
+      ReLU(0 or input, 기울기가 0또는 1이므로 Gradient Vanishing발생 X, exp지수함수가 없어 tanh,sigmoid보다 연산량 6배 빠르다. 하지만 다음 layer가 있을 경우 출력값이 모두 0이 되는 현상이 있다)
+      Leaky ReLU(0.1x or x, alpha를 보통 0.1로 설정. ReLU의 한계점 보완), Maxout, ELU(a(e^x-1) or x, exponential linear unit. alpha2도 설정 가능하다. 지수함수가 있어 속도가 빠르지 않은편)
+      PReLU(parametric rectified linear unit. ax or x, Leaky LeLU와 비슷하지만 alpha가 학습 가능한 parameter이다)
+      SiLU(== Swish, Sigmoid Linear Unit): Sigmoid(x)에 입력값x를 곱한 형태이다. (-)방향으로 갈 수록 0에 수렴하고, 복잡성을 가지고 있어, BatchNormalization과 같이 층을 깊게 쌓을 수 있게 해준다.
     
     - end to end learning(종단간 학습): 입력부터 출력까지 파이프라인 네트워크 없이 한번에 학습하는 방법
     
@@ -86,8 +92,6 @@
     - deformable convolution: 단순하게 filter의 weight를 학습하는 것이 아니라 kernel의 모양(kernel offset: sampling grid의 스케일 종횡비, 회전 방식 등)도 함께 학습하는 것이다. 즉 object의 크기에 대해서 유연하게 학습이 가능하다.
     
     - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.
-    
-    - SiLU(== Swish, Sigmoid Linear Unit): Sigmoid(x)에 입력값x를 곱한 형태이다. (-)방향으로 갈 수록 0에 수렴하고, 복잡성을 가지고 있어, BatchNormalization과 같이 층을 깊게 쌓을 수 있게 해준다.
     
     - Tensorrt: NVDIA GPU를 이용한 모델 최적화 엔진 인터페이스 - https://developer.nvidia.com/tensorrt
     
