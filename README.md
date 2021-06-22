@@ -1,5 +1,5 @@
 # STUDY
-🔥🔥
+🔥🔥  
 ---
 # TIL  
 <details>  
