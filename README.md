@@ -5,6 +5,9 @@
 # DICTIONARY  
 <details>
   <summary><b>AI</b></summary> 
+  
+  ---
+  
   <details>   
     <summary><b>용어사전 </b></summary>  
 
@@ -64,6 +67,8 @@
 
 <details>
   <summary><b>Linus</b></summary>
+  
+  ---  
   
   <details>
     <summary><b>용어</b></summary>
