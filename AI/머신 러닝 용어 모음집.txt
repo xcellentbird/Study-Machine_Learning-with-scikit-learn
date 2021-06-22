@@ -1,0 +1,145 @@
+머신 러닝
+
+linear regression, logistic regression - 중요
+Neural networks, Convolutional Neural Network, Recurrent Neural Network
+텐서플로우와 파이썬
+
+Andrew Ng's ML class
+https://class.coursera.org/ml-003/lecture
+
+Convolutional Neural Networks for Visual Recognition
+http://23ln.github.io
+
+sec1
+ML machine learning: 데이터를 이용해 스스로 학습하는 알고리즘
+Supervised Learning: 정해진 labeled 데이터(트레이닝 셋)을 이용하여 학습을 시킴
+Unsupervised Learning: 자동적으로 레이블을 그룹화한다. 즉 데이터를 보고 스스로 학습함.
+
+Supervised Learning
+이미지 레이블링, 이메일 스팸 필터, 시험 성적 예상
+linear regression(선형 회귀) : 한 개 이상의 독립 변수 x와 y의 선형 관계를 모델링하는 것
+Multiple linear regression : 두 개 이상의 독립 변수 x ...
+
+binary classification(이진 분류) : 둘 중 하나를 결정하는 문제. 대표적인 솔루션 알고리즘으로 Logistic Regression
+multi-label classification
+
+Tensorflow - google software
+data flow graphs를 이용한 numerical computation
+data arrays = tensors
+
+Activation: sigmoid, ReLU, Leaky ReLU, Maxout, ELU, tanh
+Cost function: cross-entropy, (H(x)-y)^2의 평균
+Optimizer: GradientDescent
+
+Objective function 목적 함수 :  함수의 값을 최소화하거나, 최대화하는 목적을 가진 함수
+비용 함수(=손실함수) Cost function(=Loss function) 함수의 값을 최소화 하는 목적을 가진 함수
+- H(x)-y  예측값 - 실제값
+H(x) = Wx + b       W: (Weight)가중치     b: (bias)절편  H(x): 가설 식
+평균 제곱 오차 : cost(W, b) = (H(x)-y)^2의 평균   -  오차의 절대적인 크기(양수, 음수 -> 절댓값)를 구하기 위해 제곱하고, 오차의 평균을 구합니다
+cost최소화가 머신러닝의 목표.   cost :  예측값과 실제값의 차이
+cost최소화 W:= W-α*미분(cost(W, b))   :   cost 최소화를  
+sigmoid : g(z) = 1/(1+e^(-(Wx+b)))     -   여기에서 W를 크게 하면 sigmoid function의경사도가 커짐. 역할: Binary Classification에서 직선을 더 유연하게 만들기 위한 hypethesis함수
+logistic regression : 너무 과한(동떨어진) 데이터에 의해 평균이 치우쳐서 판단의 정확도가 떨어지게 될 때 쓰임
+시그노이드를 사용한 이분법 logistic regression
+cost(W) = c(H(x),y)의 평균, c(H(s),y) = -ylog(H(x)) -(1-y)log(1-H(x))
+multinomical classification : A or not A, B or not B, C or not C처럼 3가지 이상으로 분류하는 것
+softmax : 어떠한 함수를 이용하여 퍼센트 비율로 나눠줌
+cross-entropy D(S,L) =  - L log(S)의 합     :  L은 실제값y의 행렬
+cross-entropy cost function = c(H(s),y) = -ylog(H(x)) -(1-y)log(1-H(x)) 
+
+learning rate : 학습률 α은 W값을 변경할 때, 얼마나 크게 변경 할 지를 결정합니다. 또는 경사를 내려갈 때 얼마나 큰 폭으로 움직일 지 결정합니다
+learning rate 가 너무 크면 예측에서 벗어난다(overshooting). 너무 작으면 예측이 너무 오래 걸리거나(runtime error에 의해 도중 예측을 그만두게됨), local minimum에 걸려 global minimum을 찾을 수 없게 된다.
+standardizaton : 평균을 뺌으로서 평균(중간 기준)을 0으로 만들고, a를 곱해 크기 비율을 줄여 보기 좋게 만들어 준다.
+trainin data가 많을 수록 overfitting을 줄일 수 있다. 또는 Regularization(일반화, 구부러진 그래프를 핀다)를 통하여 줄일 수 있다.
+Regularization : cross-entropy식에 λΣ(W^2)를 더한다. cost함수를 단순하게 만들어준다. W= weight, λ = regularzation strength
+training set : 트레이닝 시킬 데이터 셋. learning rate와 regularization strength을 정함 
+validation set : 모의 테스트 데이터 셋.
+testing set : 테스트 데이터 셋
+online learning : 기존의 러닝 데이터 셋을 가지면서, 추가로 생긴 데이터 셋을 받아들여 러닝 데이터 셋을 만드는 것(인터넷으로)
+MINIST Dataset : 숫자 판별
+정확도 : 실제값과 예측값이 얼마나 잘 맞는지
+
+초기 가중치 W는 0이면 안 된다 - RBM을 사용한 W 초기화 많이 이용
+RBM: forward(x W) 했을 때와 backward(x 1/W) 했을 때의 입력데이터 비교하여 두 개의 차이가 거의 나지 않도록 하는 가중치 W를 구한다. 
+encode = Forward, decode = Backward
+Xavier/He: 입력값과 출력값의 개수를 이용한 간단한 초기화 방법
+
+dropout:  몇몇 임의의 노드를 쉬게 하여 나머지 노드의 w가 학습이 잘 되게 한다. 그 후에 마지막에 한꺼번에 학습시키면 성능이 좋게 나온다.
+Ensemble: 하나의 데이터셋과 트레이닝셋에 여러 모델로 학습시킨 후 결과를 모은 것이 더 효과가 좋다.
+
+TF_v1
+import tensorflow.compat.v1 as tf,       tf.disable_v2_behavior()
+tensor_name = tf.constant("무엇무엇")     :   "무엇무엇"문자열을 가지는 상수(값 변경 불가능) 오퍼레이션 생성하여 변수 텐서 tensor_name을 가리키게 됨
+tf.constant(value, dtype=None, shape=None, name='Const')
+session_name = tf.Session() : op 객체를 실행하고, tensor 객체를 평가하기 위한 환경(그래프) 객체 만듬
+tf.placeholder(데이터타입)  :  텐서를 담을 수 있는 자료형 선언
+session_name.run(tensor_name, feed_dict={placholder에 들어갈 값 선언})  :  텐서를 세션에서 실행(처리)합니다
+tensor_name = Variable("무엇무엇")        :   constant와 기능은 같지만 텐서 값이 변경 가능
+tf.reduce_mean(식)   :   평균을 구합니다
+tf.train.GraientDescentOptimizer(learning_rate).minmize(cost) : 경사 하강법(gradient descent)으로 비용(cost)를 최소화(minimize)하는 모델 파라미터 W,b를 찾습니다
+session_name.run(tf.global_variables_initializer()) : 변수를 초기화 시킵니다
+tf.sigmoid(식)  :   식의 시그모이드를 구합니다
+tf.arg_max(식, 0)  :  모든 column을 검색하여 최대값을 찾아 인덱스 값을 넘김 
+tf.arg_max(식, 1)  :  모든 row을 검색 ...
+tf.random_normal([j, i], mean = m, stddev = d)   :   평균이 m이고 분산이 d인 j x i 크기의 난수 행렬을 만든다
+tf.add 덧셈, tf.sub 뺄셈, tf.mul 곱셈 tf.div 나눔 몫, tf.mod 나머지, tf.abs 절댓값
+tf.neg 음수 전환, tf.sign 부호 반환(-1,0,1), tf.inv 역수, tf.square 제곱, tf.round 반올림
+tf.sqrt 제곱근, tf.pow 거듭제곱, tf.exp 지수값 tf.log 로그값 tf.maximum 최댓값
+tf.cos 코사인 tf.sin 사인, tf.diag 대각행렬, tf.transpose 전치행렬, tf.matmul 행렬곱
+numpy.random.seed(x) : x개 만큼 0~1사이의 시드 생성
+numpy.random.shuffle(X):  X 데이터의 순서를 무작위로 바꾼다.
+numpy.random.rand(x) : x개 만큼 0~1사이의 균일 분포된 난수 생성
+numpy.random.randint(max, size=x) : 0~max 사이 정수 중 x개를 무작위로 골라낸다(중복가능)
+numpy.random.randint(min, max, size=x) : min~max 사이 정수 중 x개를 무작위로 골라낸다(중복가능)
+numpy.random.randn(x) : 기댓값이 0이고 표준편차가 1인 가우시안 표준 정규 분포를 따르는 난수 x개 생성
+ 
+
+
+
+항상 간편하게 import tensorflow as tf 해주자
+tensor_name = tf.constant("무엇무엇")     :   "무엇무엇"문자열을 가지는 상수(값 변경 불가능) 오퍼레이션 생성하여 변수 텐서 tensor_name을 가리키게 됨
+tensor_name = Variable("무엇무엇")        :   constant와 기능은 같지만 텐서 값이 변경 가능
+tensor_name.shape   :   텐서의 모양을 알 수 있음
+tensor_name.dtype   :   텐서의 데이터 타입을 알 수 있음
+tensor_name.numpy()     :   numpy()메소드를 사용하여 텐서의 값을 넘파이 데이터 타입으로 변환 출력(byte)
+tensor_name.numpy().decode('utf-8')    :    byte형식 클래스를 str 클래스로 변환
+tf.add(tens1, tens2) :  tensor1, tensor2를 더합니다
+tf.multiply(tens1, tens2) : tensor1, tensor2를 곱합니다
+tf.matmul(tens3, tens4) : 행렬 텐서 tens3, tens4를 행렬곱 연산시킵니다
+tf.reduce_sum(식)     :    텐서의 차원들을 탐색하며 개체들의 총합을 구한다
+tf.reduce_mean(행렬, axis = 1)  :  1축의 원소 평균을 구함
+tf.argmax(행렬, axis=0) : 0축 방향으로 봤을 때 각 원소는 몇번째 것이 더 큰 지 인덱스 반환
+tf.reshape(행렬, shape=원하는 모양)  :  행렬의 shape을 바꿔버림
+tf.squeeze(행렬) : 행렬의 차원을 줄여줌
+tf.expand_dims(행렬, 1) :  행렬의 차원을 1차원 늘려줌
+tf.one_hot(index, depth=2)  :  크기가 2이고 index자리는 1, 나머지 index자리는 0으로 바꾼 행렬 반환 
+tf.cast(행렬, tf.int32)  :  행렬의 원소를 int형으로 바꿈
+tf.stack([행렬, 행렬, 행렬], axis=1)  :  1축으로 행렬을 쌓아 합침
+tf.ones_like(행렬)  :  원소 모두를 1로 바꿈
+tf.zeros_like(행렬)  :  원소 모두를 0으로 바꿈
+for x, y in zip(행렬)   :    뭐라고 설명해야할 지 모르겠음.... 직접해보시길
+
+
+node = operation
+edge = tensor
+
+개념잡기 
+난수 : random number
+시드(seed) : 컴퓨터에 의해 생성되는 무작위의 수 
+
+
+Htpothesis: Regression에서 관계를 나타내는 linear 선을 의미하기도 함
+가설의 값과 실제값의 차이를 제곱하여 평균을 구하기 위해 m(데이터량)으로 나누고 마지막으로 미분시킨다
+Convex function - gredient 알고리즘이 한 지점에서 만나기 때문에 계산 및 설계하기 쉬움
+
+몇 차원 = rank
+모양 
+
+data = np.loadtxt("파일이름.txt",delimiter = '문자 분간')
+
+excel을 읽어오기 위한 모듈 설치
+python -m pip install pandas
+python -m pip install xlrd
+import pandas as pd
+data = pd.read_excel('파일이름.xlsx',dtype='float32')
+data = data.values
