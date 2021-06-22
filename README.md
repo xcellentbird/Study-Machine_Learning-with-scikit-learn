@@ -6,20 +6,8 @@
 # TIL
 <details>
   <summary><b>AI</b></summary>
-      <details>
-        <summary><b>scikit-learn</b></summary>
-
-      - sklearn.model_selection.train_test_split(*arrays, test_size, train_size, random_state, shuffle) = return list, length=2*len(arrays)    
-      - sklearn.neighbors.KNeighborsClassifier(n_neighbors=5, weights={‘uniform’, ‘distance’}, algorithm={‘auto’, ‘ball_tree’, ‘kd_tree’, ‘brute’}, leaf_size=30(set when algorithm=ball_tree, kd_tree), p=1:manhattan_distance|2:euclidean_distance)    
-      - - kn.fit(), kn.get_params(), kn.predict, kn.predict_proba  
-      </details>
-  </details>
-  <details>
-    <summary><b>3. 기계학습 - 강의 복습 노트 </b></summary>
-  </details>
   <details>
     <summary><b>4. 용어사전 </b></summary>
-
     - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다). 
 
     - semi-supervised learning(준지도학습): 지도학습에서 레이블링 작업에 대한 시간과 비용을 줄이고자 나온 방법. 일부만을 레이블링하고(AI에 힌트와 예시를 던져주고), 나머지 데이터는 unsupervised learning(혼자서 깨우치도록)하도록 만든다. [관련 논문 리뷰](https://blog.est.ai/2020/11/ssl/)  
