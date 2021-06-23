@@ -109,7 +109,7 @@
 </details>
 
 <details>
-  <summary><b>Linus</b></summary>
+  <summary><b>Linux</b></summary>
   
   ---  
   
