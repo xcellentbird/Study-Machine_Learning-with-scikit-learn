@@ -105,6 +105,8 @@
     
     - Model Ensemble에서 성능이 낮은 모델을 ensemble하는 것만으로도 ensemble 모델의 성능이 좋아진다. 그만큼 parameter 수가 많아지기 때문일 것이라 추측된다.
     
+    - BatchNormalization, Dropout, Pooling 적용 순서: Conv - BathcNorm - Activation - Dropout - Pooling
+    ↳ 배치 정규화의 목적이 네트워크 연산 결과가 원하는 방향의 분포대로 나오는 것이기 때문에 Conv 연산 뒤에 바로 적용해야 한다.   
   </details>
   
   ---  
