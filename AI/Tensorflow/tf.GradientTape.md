@@ -1,6 +1,10 @@
 ## 배경:  
 ![image](https://user-images.githubusercontent.com/59414764/123679114-1be0d680-d882-11eb-9d5e-8553339ed9d4.png)   
-   
+ 
+ 
+ 
+ 
+ 
    
    
 생각해보니 python의 with ... as의 원리가 어떤 건지 생각해본 적이 없었다.
