@@ -20,9 +20,9 @@ Tensorflow 2.0의 Eager모드에서는 다음과 같이 구성되어 다이나�
 그리고 그 전에 push_tape 함수가 호출되는 것을 볼 수 있다.   
 ![image](https://user-images.githubusercontent.com/59414764/123682324-d3c3b300-d885-11eb-9c50-fff4964cc068.png)
 
-간단하게 해석하자면, tape(auto grad graph)가 이미 기록되고(돌아가고)있으면 오류를 발생시키고, 중단된 tape가 있으면 이어서 실행, 그리고 없다면 새로운 tape를 원리다. 그리고 기록 중이라는 flag를 True로 띄운다   
+간단하게 해석하자면, tape(auto grad graph)가 이미 기록되고(돌아가고)있으면 오류를 발생시키고, 중단된 tape가 있으면 이어서 실행, 그리고 없다면 tape.push_new_tape()를 호출하여 새로운 tape를 stack에 push한다. 그리고 push된 tape를 객체의 _ tape 변수에 저장되는 원리다. 그리고 기록 중이라는 flag를 True로 띄운다   
 
 with구문을 나가게 되면 exit()가 호출된다. exit함수는 아주 간단하다. tape가 기록 중에 있으면 pop_tape()를 호출한다.   
 그리고 pop_tape는...   
 ![image](https://user-images.githubusercontent.com/59414764/123685326-847f8180-d889-11eb-8d9b-1c1af53d72b6.png)   
-tape가 기록 중이지 않을 때 오류를 발생시키고, 기록 중이었다면, 기록한 tape_를 tape의 pop_tape함수에 담아 실행시키면 stack에 있는 tape가 pop된다(pop된 tape는 GradientTape 인스턴스에 저장될 것으로 추측이 된다). 그리고나서 기록 flag를 False로 바꿔주면서 기록을 끝낸다.
+tape가 기록 중이지 않을 때 오류를 발생시키고, 기록 중이었다면, 기록한 tape_를 tape의 pop_tape함수에 담아 실행시키면 stack에 있는 tape가 pop된다(pop된 tape는 GradientTape 인스턴스의 _ tape에 저장된 상태인 것으로 추측이 된다). 그리고나서 기록 flag를 False로 바꿔주면서 기록을 끝낸다.
