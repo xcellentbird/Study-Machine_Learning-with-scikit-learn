@@ -8,3 +8,9 @@
 
 ## Python Docs에서는...   
 ![image](https://user-images.githubusercontent.com/59414764/123679463-75e19c00-d882-11eb-93a8-6505cc33f99c.png)
+
+
+
+=> 간단하게 요약하자면 with를 만났을 때, __enter__()가 호출되고, __enter__()의 반환값이 as 뒤의 변수에 저장된다. 그리고 with 구문을 나가면서 __exit__()함수가 실행되고, 설정된 예외함수가 실행된다는 것이다.
+
+
