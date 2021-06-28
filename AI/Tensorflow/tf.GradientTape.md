@@ -24,5 +24,5 @@ Python Docs에서는...
 
 with구문을 나가게 되면 exit()가 호출된다. exit함수는 아주 간단하다. tape가 기록 중에 있으면 pop_tape()를 호출한다.   
 그리고 pop_tape는...   
-![image](https://user-images.githubusercontent.com/59414764/123682991-ad524780-d886-11eb-9674-1d8749de1d1c.png)
+![image](https://user-images.githubusercontent.com/59414764/123685326-847f8180-d889-11eb-8d9b-1c1af53d72b6.png)   
 tape가 기록 중이지 않을 때 오류를 발생시키고, 기록 중이었다면, 기록한 tape_를 tape의 pop_tape함수에 담아 실행시키면 stack에 있는 tape가 pop된다(pop된 tape는 GradientTape 인스턴스에 저장될 것으로 추측이 된다). 그리고나서 기록 flag를 False로 바꿔주면서 기록을 끝낸다.
