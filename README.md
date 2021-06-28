@@ -108,6 +108,15 @@
     - BatchNormalization, Dropout, Pooling 적용 순서: Conv - BathcNorm - Activation - Dropout - Pooling [출처](https://gaussian37.github.io/dl-concept-order_of_regularization_term/)
     ↳ 배치 정규화의 목적이 네트워크 연산 결과가 원하는 방향의 분포대로 나오는 것이기 때문에 Conv 연산 뒤에 바로 적용해야 한다.   
   </details>
+  <details>
+    <summary><b>Engineering</b></summary>
+
+    - CUDA는 GPU를 사용한 연산 가속화 프로그램이다. 성능이 뛰어나지만, NVIDIA의 GPU에서만 이용할 수 있다. 주로 cuDNN API를 사용한다.   
+    
+    - OpenCL은 CUDA와 비슷하지만, NVIDIA 외의 GPU에서도 사용가능하다는 장점이 있다. 하지만, NVIDIA에서는 연산 속도가 늦다.
+    
+    - GPU 사용에 있어서, 하드 디스크의 데이터를 연산을 위해 GPU에 옮기는 과정에서 병목 현상(GPU로 데이터 전송 속도가 GPU 연산 속도보다 느린 경우)이 일어나 GPU를 효율적으로 사용할 수 없게 된다. 이를 해결하기 위한 해결책으로, 데이터를 모두 RAM에 옮기거나, HDD 대신 SSD를 사용하거나, CPU multi core를 사용하는 방법이 있다.
+  </details>
   
   ---  
   
