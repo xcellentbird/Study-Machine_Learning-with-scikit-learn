@@ -36,7 +36,7 @@ tape가 기록 중이지 않을 때 오류를 발생시키고, 기록 중이었�
 ![image](https://user-images.githubusercontent.com/59414764/123686519-da085e00-d88a-11eb-8ecc-e68a021399ac.png)   
 target: 미분을 실행할 Tensor or Variable 가 담긴 구조체를 넣는다.   
 sources: target의 미분 대상인 Tensor or Variable들을 넣는다.   
-output_gradients: 넣은 target의 각 요소들의 미분값들을 해당 입력 변수에 담는다(반환 값이 달라지진 않는다).   
+output_gradients:   
 [unconnected_gradients](https://github.com/tensorflow/tensorflow/blob/a4dfb8d1a71385bd6d122e4f27f86dcebb96712d/tensorflow/python/ops/unconnected_gradients.py#L27): sources에 대한 target의 미분 값이 0일 경우(target의 변수에 sources가 없거나, relu같은 활성화함수에 의해 0을 미분할 경우) 반환값을 어떤 값으로 대체할 지 정하도록 한다. NONE, ZERO를 넣을 수 있다. (계산과정에서 어떠한 차이가 있을 지는 모르겠다...)   
 
 
