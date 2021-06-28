@@ -34,5 +34,7 @@ target: 미분을 실행할 Tensor or Variable 가 담긴 구조체를 넣는다
 sources: target의 미분 대상인 Tensor or Variable들을 넣는다.   
 output_gradients: 넣은 target의 각 요소들의 미분값들을 해당 입력 변수에 담는다(반환 값이 달라지진 않는다).   
 [unconnected_gradients](https://github.com/tensorflow/tensorflow/blob/a4dfb8d1a71385bd6d122e4f27f86dcebb96712d/tensorflow/python/ops/unconnected_gradients.py#L27): sources에 대한 target의 미분 값이 0일 경우(target의 변수에 sources가 없거나, relu같은 활성화함수에 의해 0을 미분할 경우) 반환값을 어떤 값으로 대체할 지 정하도록 한다. NONE, ZERO를 넣을 수 있다. (계산과정에서 어떠한 차이가 있을 지는 모르겠다...)   
+
+
 요약하자면, 함수의 입력 변수들과 기록된 tape 정보들을 고려하여 imperative_grad 함수를 통해 기울기를 계산해낸다. 그리고 계산된 가중치의 기울기(grad)를 반환한다. 다시말해, gradient함수를 호출될 때 기울기가 계산되어 반환된다.
 
