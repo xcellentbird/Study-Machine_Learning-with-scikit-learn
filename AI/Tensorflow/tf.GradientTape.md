@@ -7,7 +7,7 @@ Tensorflow 2.0의 Eager모드에서는 다음과 같이 구성되어 다이나�
 여기에서 with tf.GradientTape() as tape는 어떻게 돌아가는 것일까?    
 
    
-Python Docs에서는...   
+[Python Docs](https://docs.python.org/ko/3/reference/compound_stmts.html#try)에서는...   
 ![image](https://user-images.githubusercontent.com/59414764/123679463-75e19c00-d882-11eb-93a8-6505cc33f99c.png)
 
 
