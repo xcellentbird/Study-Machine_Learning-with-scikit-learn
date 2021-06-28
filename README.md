@@ -59,10 +59,6 @@
     
     - Deconvolution: convolution연산을 거꾸로 수행하는 것. 역산
     
-    - FLOPs(FLoating point OPerations): 딥러닝에서 계산량(덧셈, 곱셈 등 연산량)을 뜻한다. 모델의 크기와 효율성을 가늠할 수 있다.
-    
-    - MAC(Multiply-ACcumulate): FLOPs와 같은 딥러닝에서의 계산량을 뜻한다. 일반적으로 1 MAC = 2 FLOPs가 된다.
-    
     - backpropagation(역전파): 예측값과 실제값의 오차를 이용하여 가중치를 개선하는 과정
     
     - activation function(활성화 함수)의 종류:
@@ -91,11 +87,7 @@
     
     - deformable convolution: 단순하게 filter의 weight를 학습하는 것이 아니라 kernel의 모양(kernel offset: sampling grid의 스케일 종횡비, 회전 방식 등)도 함께 학습하는 것이다. 즉 object의 크기에 대해서 유연하게 학습이 가능하다.
     
-    - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.
-    
-    - Tensorrt: NVDIA GPU를 이용한 모델 최적화 엔진 인터페이스 - https://developer.nvidia.com/tensorrt
-    
-    - Onnx: Tensorflow, PyTorch에서 만든 모델들을 export하고, 서로 각 프레임워크 환경 또는 모바일 환경에서 import하여 호환 사용을 가능하게 한다. - https://github.com/onnx/onnx
+    - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.   
     
   </details>
   <details>
@@ -115,11 +107,17 @@
     
     - OpenCL은 CUDA와 비슷하지만, NVIDIA 외의 GPU에서도 사용가능하다는 장점이 있다. 하지만, NVIDIA에서는 연산 속도가 늦다.   
     
-    - TensorRT는 다양한 딥러닝 프레임워크에서 학습된 모델을 NVIDIA GPU에 최적화하여 추론 속도를 향상시켜 서비스를 개선하는데 도움을 주는 모델 최적화 엔진이다.   
+    - TensorRT는 다양한 딥러닝 프레임워크에서 학습된 모델을 NVIDIA GPU에 최적화하여 추론 속도를 향상시켜 서비스를 개선하는데 도움을 주는 모델 최적화 엔진이다. - https://developer.nvidia.com/tensorrt 
     
     - GPU 사용에 있어서, 하드 디스크의 데이터를 연산을 위해 GPU에 옮기는 과정에서 병목 현상(GPU로 데이터 전송 속도가 GPU 연산 속도보다 느린 경우)이 일어나 GPU를 효율적으로 사용할 수 없게 된다. 이를 해결하기 위한 해결책으로, 데이터를 모두 RAM에 옮기거나, HDD 대신 SSD를 사용하거나, CPU multi core를 사용하는 방법이 있다.
     
-    - Onnx 모듈을 사용하여 PyTorch, TensorFlow 간의 모델 공유가 가능하다.
+    - Onnx 모듈은 Tensorflow, PyTorch에서 만든 모델들을 export하고, 서로 각 프레임워크 환경 또는 모바일 환경에서 import하여 호환 사용을 가능하게 한다. - https://github.com/onnx/onnx
+    
+    - FLOPs(FLoating point OPerations): 딥러닝에서 계산량(덧셈, 곱셈 등 연산량)을 뜻한다. 모델의 크기와 효율성을 가늠할 수 있다.
+    
+    - MAC(Multiply-ACcumulate): FLOPs와 같은 딥러닝에서의 계산량을 뜻한다. 일반적으로 1 MAC = 2 FLOPs가 된다.
+  
+  
   </details>
   
   ---  
