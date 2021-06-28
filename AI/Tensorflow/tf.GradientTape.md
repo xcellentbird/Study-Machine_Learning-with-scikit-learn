@@ -26,3 +26,13 @@ with구문을 나가게 되면 exit()가 호출된다. exit함수는 아주 간�
 그리고 pop_tape는...   
 ![image](https://user-images.githubusercontent.com/59414764/123685326-847f8180-d889-11eb-8d9b-1c1af53d72b6.png)   
 tape가 기록 중이지 않을 때 오류를 발생시키고, 기록 중이었다면, 기록한 tape_를 tape의 pop_tape함수에 담아 실행시키면 stack에 있는 tape가 pop된다(pop된 tape는 GradientTape 인스턴스의 _ tape에 저장된 상태인 것으로 추측이 된다). 그리고나서 기록 flag를 False로 바꿔주면서 기록을 끝낸다.
+
+
+마지막으로 tf.GradientTape.gradient(self, target, sources, output_gradients, unconnected_gradients) 함수로 grad를 반환받는다.   
+![image](https://user-images.githubusercontent.com/59414764/123686519-da085e00-d88a-11eb-8ecc-e68a021399ac.png)   
+target: 미분을 실행할 Tensor or Variable 가 담긴 구조체를 넣는다.   
+sources: target의 미분 대상인 Tensor or Variable들을 넣는다.   
+output_gradients: 넣은 target의 각 요소들의 미분값들을 해당 입력 변수에 담는다(반환 값이 달라지진 않는다).   
+[unconnected_gradients](https://github.com/tensorflow/tensorflow/blob/a4dfb8d1a71385bd6d122e4f27f86dcebb96712d/tensorflow/python/ops/unconnected_gradients.py#L27): sources에 대한 target의 미분 값이 0일 경우(target의 변수에 sources가 없거나, relu같은 활성화함수에 의해 0을 미분할 경우) 반환값을 어떤 값으로 대체할 지 정하도록 한다. NONE, ZERO를 넣을 수 있다. (계산과정에서 어떠한 차이가 있을 지는 모르겠다...)   
+요약하자면, 함수의 입력 변수들과 기록된 tape 정보들을 고려하여 imperative_grad 함수를 통해 기울기를 계산해낸다. 그리고 계산된 가중치의 기울기(grad)를 반환한다. 다시말해, gradient함수를 호출될 때 기울기가 계산되어 반환된다.
+
