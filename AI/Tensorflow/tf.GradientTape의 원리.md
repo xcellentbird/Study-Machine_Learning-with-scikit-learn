@@ -1,4 +1,4 @@
-# 0. 배경  
+# 0. 공부 배경  
 ![image](https://user-images.githubusercontent.com/59414764/123679114-1be0d680-d882-11eb-9d5e-8553339ed9d4.png)   
 
 
