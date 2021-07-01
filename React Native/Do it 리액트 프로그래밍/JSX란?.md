@@ -18,3 +18,8 @@ React.createElement는 컴포넌트(import {컴포넌트} from 'react_native' �
 const textElement = React.createElement(Text, null, 'Hello!')
 ```
 
+또한 xml형식에 다음과 같이 중가로{}를 사용하여JS코드를 넣을 수도 있습니다.
+```
+const halo = 'Hello World!'
+<Text>{halo}</Text>
+```
