@@ -4,6 +4,6 @@ JSX(JavaScript XML): XML에 JS을 결합할 용도로 만들어진 구문입니�
 
 또한 JSX구문이 있는 TS(Type Script)는 '.tsx'형식이고, 'import react from 'react'같은 import가 필요합니다.   
 React.createElement는 컴포넌트(import {컴포넌트} from 'react_native' 과 같이 불러온 것)를 가상 DOM 객체로 만드는 역할을 합니다.   
-'''
+'''html
   <Text>Hello!</Text>
 '''
