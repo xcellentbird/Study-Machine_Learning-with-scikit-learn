@@ -18,8 +18,15 @@ React.createElement는 컴포넌트(import {컴포넌트} from 'react_native' �
 const textElement = React.createElement(Text, null, 'Hello!')
 ```
 
-또한 xml형식에 다음과 같이 중가로{}를 사용하여JS코드를 넣을 수도 있습니다.
+또한 JSX형식에 다음과 같이 중가로{}를 사용하여JS코드를 넣을 수도 있습니다.
 ```
 const halo = 'Hello World!'
 <Text>{halo}</Text>
 ```
+
+또한 가상 DOM 객체에 JSX를 담을 수도 있습니다.
+```
+const virtualDOM = <SafeAreaView><Text>Hello JSX</Text></SafeAreaView>
+```
+
+또한 JSX 형식 내에서는 return 키워드 없이 반환해야합니다. 이러한 구문을 표현식(expression)이라 합니다. 그리고 if, for, switch/case같은 실행문(execution statement)은 JSX 형식 안에서 사용할 수 없습니다.
