@@ -61,6 +61,7 @@ Disassembly of <code object <listcomp> at 0x10499e5b0, file "<stdin>", line 2>:
              12 JUMP_ABSOLUTE            4
         >>   14 RETURN_VALUE
 ```
+list의 경우 listcomp라는 bytecode가 적용되는 것을 볼 수 있다.
 ```
 >>> dis(tuple)
   2           0 LOAD_GLOBAL              0 (tuple)
@@ -85,9 +86,12 @@ Disassembly of <code object <genexpr> at 0x104bbb870, file "<stdin>", line 2>:
              12 JUMP_ABSOLUTE            2
         >>   14 LOAD_CONST               0 (None)
              16 RETURN_VALUE
->>> 
+>>>    
+```   
 
-```
+tuple의 경우, 바로 comp로 넘어가지 않고 generator이 생성되어 처리되는 것을 볼 수 있다.
+
+
 
 
 +) Namedtuple을 사용하면 dict과 같은 구조체 형태로 만들 수 있다. 이 역시 dict과의 차이점은 데이터와 그 길이가 불변하다는 것이다.   
