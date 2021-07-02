@@ -26,7 +26,8 @@ $ python -mtimeit '("fee", "fie", "fo", "fum")'
 이렇게 기술적 관점에서 보았을 때, 보관기간이 길고, 불변하는 데이터는 tuple로 저장하는 것이 훨씬 효율적으로 보인다.   
 반대로 데이터가 언제든 변할 수 있고, 구조 길이에 의미가 있다면 list를 사용하는 것이 좋다.   
 
-또한 list는 comprehension이 bytecode로 구현되어 있지만, tuple은 comprehension이 구현되어 있지 않다.
+또한 list의 경우 append는 변수를 호출하는 동작까지 있어, comprehension을 사용하는 것보다 느리다.
+여기에서 list는 comprehension이 bytecode로 구현되어 있지만, tuple은 comprehension이 구현되어 있지 않다.
 ```
 Python 3.9.2 | packaged by conda-forge | (default, Feb 21 2021, 05:00:30) 
 [Clang 11.0.1 ] on darwin
