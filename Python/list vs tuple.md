@@ -18,3 +18,7 @@ $ python -mtimeit '("fee", "fie", "fo", "fum")'
 +) Namedtuple을 사용하면 dict과 같은 구조체 형태로 만들 수 있다. 이 역시 dict과의 차이점은 데이터와 그 길이가 불변하다는 것이다.   
 +) 또한 tuple은 dict의 key값으로도 사용가능하다.   
 +) 함수형 프로그래밍에서 args에 tuple형을 넣어 함수를 동작시키는 것도 가능하다. 변수가 다른 요소들에 영향을 받지 않아 훨씬 더 안정적이다.   
+
+-참조-
+(Why do we need tuples in Python (or any immutable data type)?)[https://stackoverflow.com/questions/2174124/why-do-we-need-tuples-in-python-or-any-immutable-data-type]  
+
