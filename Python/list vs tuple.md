@@ -13,5 +13,5 @@ list는 Array와 같은 형태로 되어 있어, list의 길이나 요소를 바
   $ python -mtimeit '("fee", "fie", "fo", "fum")'
   
   10000000 loops, best of 3: 0.0563 usec per loop
- </code>
+</code>
  
