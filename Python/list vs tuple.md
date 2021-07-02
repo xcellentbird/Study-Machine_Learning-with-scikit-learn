@@ -6,12 +6,9 @@ list는 Array와 같은 형태로 되어 있어, list의 길이나 요소를 바
 일단 tuple은 필요한 데이터 공간만을 미리 선언하기 때문에, 공간적으로 효율적이라고 볼 수 있다. 또한 list를 사용할 때보다 훨씬 동작 시간이 짧다고 한다.
 
 ```
-  $ python -mtimeit '["fee", "fie", "fo", "fum"]'
-  
-  1000000 loops, best of 3: 0.432 usec per loop 
-  
-  $ python -mtimeit '("fee", "fie", "fo", "fum")'
-  
-  10000000 loops, best of 3: 0.0563 usec per loop
+$ python -mtimeit '["fee", "fie", "fo", "fum"]'
+1000000 loops, best of 3: 0.432 usec per loop 
+$ python -mtimeit '("fee", "fie", "fo", "fum")'
+10000000 loops, best of 3: 0.0563 usec per loop
 ```
  
