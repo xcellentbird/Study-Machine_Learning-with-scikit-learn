@@ -22,4 +22,4 @@ $ python -mtimeit '("fee", "fie", "fo", "fum")'
 -참조-   
 [Why is there no tuple comprehension in Python?](https://stackoverflow.com/questions/2174124/why-do-we-need-tuples-in-python-or-any-immutable-data-type)   
 [Why do we need tuples in Python or any immutable data type?](https://stackoverflow.com/questions/2174124/why-do-we-need-tuples-in-python-or-any-immutable-data-type)
-[Lists vs. Tuples](https://nedbatchelder.com/blog/201608/lists_vs_tuples.html)
+[Lists vs Tuples](https://nedbatchelder.com/blog/201608/lists_vs_tuples.html)
