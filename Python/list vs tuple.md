@@ -19,6 +19,7 @@ $ python -mtimeit '("fee", "fie", "fo", "fum")'
 +) 또한 tuple은 dict의 key값으로도 사용가능하다.   
 +) 함수형 프로그래밍에서 args에 tuple형을 넣어 함수를 동작시키는 것도 가능하다. 변수가 다른 요소들에 영향을 받지 않아 훨씬 더 안정적이다.   
 
--참조-
+-참조-   
+[Why is there no tuple comprehension in Python?](https://stackoverflow.com/questions/2174124/why-do-we-need-tuples-in-python-or-any-immutable-data-type)   
 [Why do we need tuples in Python or any immutable data type?](https://stackoverflow.com/questions/2174124/why-do-we-need-tuples-in-python-or-any-immutable-data-type)
-
+[Lists vs. Tuples](https://nedbatchelder.com/blog/201608/lists_vs_tuples.html)
