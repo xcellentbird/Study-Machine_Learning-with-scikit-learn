@@ -8,10 +8,10 @@ list는 Array와 같은 형태로 되어 있어, list의 길이나 요소를 바
 <code>
   $ python -mtimeit '["fee", "fie", "fo", "fum"]'
   
-1000000 loops, best of 3: 0.432 usec per loop   
+  1000000 loops, best of 3: 0.432 usec per loop 
   
   $ python -mtimeit '("fee", "fie", "fo", "fum")'
   
-10000000 loops, best of 3: 0.0563 usec per loop
+  10000000 loops, best of 3: 0.0563 usec per loop
  </code>
  
