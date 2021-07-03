@@ -1,3 +1,5 @@
+// 가짜 데이터를 생성하는 faker 패키지를 사용합니다
+
 import faker from 'faker';
 import * as U from './util';
 
