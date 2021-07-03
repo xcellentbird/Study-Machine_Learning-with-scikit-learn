@@ -1,3 +1,5 @@
+// 유틸리티 함수
+
 export const makeArray = (length: number) => new Array(length).fill(null);
 export const random = (min: number, max: number): number =>
   Math.round(Math.random() * (max - min)) + min;
