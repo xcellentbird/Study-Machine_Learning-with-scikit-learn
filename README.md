@@ -206,8 +206,6 @@
   <details>
     <summary><b>명령어 모음</b></summary>
     
-    - man: 메뉴얼 출력
-    
   </details>
     
   ---
