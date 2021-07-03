@@ -7,7 +7,7 @@
   ---
   
   <details>    
-    <summary><b>용어사전 </b></summary>   
+    <summary><b>용어 모음</b></summary>   
     
     - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다)
     
@@ -175,4 +175,42 @@
     
 </details>
 
+<details>
+  <summary><b>React Native</b></summary>
+  
+  ---  
+  
+  <details>
+    <summary><b>용어 모음</b></summary>
+    
+    - DOM(Document Object Model) 구조: 클래스와 객체 구조와 유사한 구조. DOM 객체는 부모/자식 형태의 tree 구조를 이룬다.
+    
+    - rendering(렌더링): 웹 브라우저가 HTML을 parsing하여 js DOM 구조로 만드는 과정.
+    
+    - 물리 DOM: 렌더링 과정에서 웹 브라우저에서 js 코드가 생성하는 실게 DOM 구조를 뜻한다.
+    
+    - 가상 DOM: 리액트 코드가 생성한 js 객체 구조.
+
+    - renderer(렌더러): 리액트가 가상 DOM 구조를 물리 DOM 구조로 만드는 기능(rendering)을 수행하는 패키지.
+
+    - Native Renderer: 리액트는 react-dom이라는 DOM 렌더러를 사용하지만, 네이티브는 네이티브 렌더러를 사용한다. 이는 java나 Object-C로 구현된 네이티브 모듈 쪽에서 진행된다.
+
+    - Native Module: 네이티브 모듈 쪽에는 JavaScriptCore 엔진이 동작합니다. 이는 C++언어로 되어있으며, Android에서는 JNI(Java Native interface), iOS에서는 FFI(Foreign. Function interface)방식으로 연결되어 동작합니다.
+    
+    - JSX(JavaScript XML): XML에 JS을 결합할 용도로 만들어진 구문입니다.
+    
+    - babel(바벨): JS 컴파일러
+
+  </details>
+  
+  <details>
+    <summary><b>명령어 모음</b></summary>
+    
+    - man: 메뉴얼 출력
+    
+  </details>
+    
+  ---
+    
+</details>
   
