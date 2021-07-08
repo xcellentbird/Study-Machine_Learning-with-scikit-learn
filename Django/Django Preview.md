@@ -16,5 +16,5 @@ $ python3 manage.py runserver
 ```
 ![image](https://user-images.githubusercontent.com/59414764/124990067-d8088100-e07a-11eb-916b-a64fab8046c1.png)
    
-설치 및 프로젝트 생성 성공 화면.  
+4. 설치 및 프로젝트 생성 성공 화면.  
 <img src="https://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png" width="500" height="500" />
