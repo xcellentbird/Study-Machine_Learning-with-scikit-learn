@@ -18,3 +18,17 @@ $ python3 manage.py runserver
    
 4. 설치 및 프로젝트 생성 성공 화면.  
 <img src="https://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png" width="500" height="500" />
+
+5. App 생성
+```
+$ django-admin startapp <app_name>
+```
+
+## Django의 MVT Pattern
+MVT = Model, View, Template
+
+1. User로부터 어떠한 요청이 들어오면,
+2. URL에서 요청을 해석하여, View와 연결.
+3. View에서는 들어온 요청을 Model, Template를 통해 처리한다.
+4. Model에서는 DB(데이터 베이스)를 ORM(Object Related Model)구조로 관리하는 역할을 한다.
+5. Template에서는 HTML + template언어를 사용하여 UI를 관리하는 역할을 한다.
