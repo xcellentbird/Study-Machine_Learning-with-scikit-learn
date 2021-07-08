@@ -18,4 +18,6 @@ $ python3 manage.py runserver
 
 설치 및 프로젝트 생성 성공 화면
 ![image](https://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png)
+
+
 <img src="hhttps://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png" width="100" height="100" />
