@@ -20,4 +20,4 @@ $ python3 manage.py runserver
 ![image](https://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png)
 
 
-<img src="hhttps://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png" width="200" height="200" />
+<img src="https://user-images.githubusercontent.com/59414764/124990222-08501f80-e07b-11eb-8289-e7977f6accca.png" width="200" height="200" />
