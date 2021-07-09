@@ -43,3 +43,7 @@ MVT = Model, View, Template
 
 - index 함수의 경우, 'requset' 요청을 받아 실행된다.
 - HttpResponse() [참고](https://docs.djangoproject.com/en/3.2/ref/request-response/#django.http.HttpResponse) 는 조금 더 공부해봐야할 것 같다.
+
+3. urls.py에서 다음과 같이 작성하여 '127.0.0.1/<port_num>/' 라는 요청이 들어왔을 때, app/views의 index함수가 실행되도록 한다.   
+![image](https://user-images.githubusercontent.com/59414764/125020930-aca28800-e0b4-11eb-9319-e52dc1b25eaa.png)
+
