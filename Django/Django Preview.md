@@ -70,3 +70,11 @@ $ python manage.py migrate
 $ python manage.py createsuperuser
 ```
 <img src="https://user-images.githubusercontent.com/59414764/125022792-6d763600-e0b8-11eb-9538-87bf5e8448d2.png" width="500" height="150" />.  
+
+3. '/admin' 요청을 통해 로그인 페이지에 접속하여 설정한 ID와 password를 입력하면, 관리자 페이지에 접속할 수 있게 된다.
+![image](https://user-images.githubusercontent.com/59414764/125023077-102eb480-e0b9-11eb-944e-0e065580ca7f.png)
+   
+![image](https://user-images.githubusercontent.com/59414764/125023154-3b190880-e0b9-11eb-96a8-f3951a7859b4.png)
+
+
+```
