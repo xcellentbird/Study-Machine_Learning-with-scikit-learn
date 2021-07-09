@@ -34,6 +34,7 @@ MVT = Model, View, Template
 4. Model에서는 DB(데이터 베이스)를 ORM(Object Related Model)구조로 관리하는 역할을 한다.
 5. Template에서는 HTML + template언어를 사용하여 UI를 관리하는 역할을 한다.
 
+---   
 ## View
 
 1. 일단 setting.py에서 application 목록에 만든 앱을 추가하여 매니저에서 앱으로 인식할 수 있도록 만든다.   
@@ -51,3 +52,8 @@ MVT = Model, View, Template
 4. 127.0.0.1/<port_num> 에 접속하면 다음과 같은 페이지를 볼 수 있다.
 <img src="https://user-images.githubusercontent.com/59414764/125021341-6568c700-e0b5-11eb-915d-04df9510a69b.png" width="280" height="70" />
 
+---   
+## Admin User
+
+0. urls.py에는 다음과 같이 '127.0.0.1/<port>/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있습니다.
+<img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="200" height="200" />
