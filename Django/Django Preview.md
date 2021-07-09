@@ -38,3 +38,7 @@ MVT = Model, View, Template
 1. 일단 setting.py에서 application 목록에 만든 앱을 추가하여 매니저에서 앱으로 인식할 수 있도록 만든다.   
 <img src="https://user-images.githubusercontent.com/59414764/125004257-1e1e0e80-e094-11eb-89db-b38efc05daa3.png" width="500" height="300" />
 
+2. App의 view.py를 다음과 같이 작성하여 'hello world!'띄우도록 만든다.   
+<img src="https://user-images.githubusercontent.com/59414764/125004608-dba90180-e094-11eb-9425-70e89a6f4caf.png" width="600" height="200" />
+
+
