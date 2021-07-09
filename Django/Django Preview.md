@@ -32,3 +32,8 @@ MVT = Model, View, Template
 3. View에서는 들어온 요청을 Model, Template를 통해 처리한다.
 4. Model에서는 DB(데이터 베이스)를 ORM(Object Related Model)구조로 관리하는 역할을 한다.
 5. Template에서는 HTML + template언어를 사용하여 UI를 관리하는 역할을 한다.
+
+## View
+
+![image](https://user-images.githubusercontent.com/59414764/125004257-1e1e0e80-e094-11eb-89db-b38efc05daa3.png)
+
