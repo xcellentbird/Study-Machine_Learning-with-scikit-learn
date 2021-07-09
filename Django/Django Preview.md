@@ -69,4 +69,4 @@ $ python manage.py migrate
 ```
 $ python manage.py createsuperuser
 ```
-<img src="https://user-images.githubusercontent.com/59414764/125022792-6d763600-e0b8-11eb-9538-87bf5e8448d2.png" width="400" height="150" />.  
+<img src="https://user-images.githubusercontent.com/59414764/125022792-6d763600-e0b8-11eb-9538-87bf5e8448d2.png" width="500" height="150" />.  
