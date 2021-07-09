@@ -28,7 +28,7 @@ $ django-admin startapp <app_name>
 ## Django의 MVT Pattern
 MVT = Model, View, Template
 
-<img src="https://user-images.githubusercontent.com/59414764/125022236-2a679300-e0b7-11eb-9f45-bf3556a0a716.png" width="400" height="400" />
+<img src="https://user-images.githubusercontent.com/59414764/125022236-2a679300-e0b7-11eb-9f45-bf3556a0a716.png" width="550" height="400" />
 
 1. User로부터 어떠한 요청이 들어오면,
 2. URL에서 요청을 해석하여, View와 연결.
