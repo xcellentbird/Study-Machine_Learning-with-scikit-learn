@@ -24,6 +24,7 @@ $ python3 manage.py runserver
 $ django-admin startapp <app_name>
 ```
 
+---   
 ## Django의 MVT Pattern
 MVT = Model, View, Template
 
