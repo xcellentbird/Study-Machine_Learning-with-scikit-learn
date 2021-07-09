@@ -48,5 +48,5 @@ MVT = Model, View, Template
 <img src="https://user-images.githubusercontent.com/59414764/125020930-aca28800-e0b4-11eb-9319-e52dc1b25eaa.png" width="300" height="300" />
 
 4. 127.0.0.1/<port_num> 에 접속하면 다음과 같은 페이지를 볼 수 있다.
-<img src="https://user-images.githubusercontent.com/59414764/125021341-6568c700-e0b5-11eb-915d-04df9510a69b.png" width="300" height="70" />
+<img src="https://user-images.githubusercontent.com/59414764/125021341-6568c700-e0b5-11eb-915d-04df9510a69b.png" width="280" height="70" />
 
