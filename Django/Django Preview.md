@@ -41,4 +41,5 @@ MVT = Model, View, Template
 2. App의 view.py를 다음과 같이 작성하여 'hello world!'띄우도록 만든다.   
 <img src="https://user-images.githubusercontent.com/59414764/125004608-dba90180-e094-11eb-9425-70e89a6f4caf.png" width="300" height="100" />
 
-
+- index 함수의 경우, 'requset' 요청을 받아 실행된다.
+- HttpResponse() [참고](https://docs.djangoproject.com/en/3.2/ref/request-response/#django.http.HttpResponse) 는 조금 더 공부해봐야할 것 같다.
