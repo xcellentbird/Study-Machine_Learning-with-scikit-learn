@@ -57,5 +57,16 @@ MVT = Model, View, Template
 ---   
 ## Admin User
 
-0. urls.py에는 다음과 같이 '127.0.0.1/<port>/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있습니다.
-<img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="250" height="130" />
+0. urls.py에는 다음과 같이 '127.0.0.1/<port>/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있다.
+<img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="250" height="130" />.  
+   
+1. 아래 명령어를 통해 migration(모델의 변경 사항을 저장하는 작업)한다.
+```
+$ python manage.py migrate
+```
+
+2. 아래 명령어를 통해 superuser(관리자) 계정을 생성합니다. (아래 빨간 글씨의 경우, 비밀번호가 너무 짧다는 경고를 의미).  
+```
+$ python manage.py createsuperuser
+```
+<img src="https://user-images.githubusercontent.com/59414764/125022792-6d763600-e0b8-11eb-9538-87bf5e8448d2.png" width="400" height="150" />.  
