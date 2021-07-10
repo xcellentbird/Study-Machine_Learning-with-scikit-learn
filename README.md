@@ -7,6 +7,12 @@
   ---
   
   <details>    
+    <summary><b>글 모음</b></summary> 
+    * [실리콘 밸리의 MLOps](https://github.com/xcellentbird/STUDY/blob/main/AI/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+    
+  </details>
+  
+  <details>    
     <summary><b>용어 모음</b></summary>   
     
     - 표준점수: 훈련 세트의 스테일을 바꾸는 대표적인 방법. 특성의 평균을 빼고 표준편차로 나누는 원리. (잊지 않고 훈련 세트의 평균, 표준편차로 테스트 세트의 표준점수를 내야한다)
