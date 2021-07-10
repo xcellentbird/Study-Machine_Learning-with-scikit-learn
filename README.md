@@ -92,6 +92,8 @@
     - Active Learning: 지도 학습에서 모든 데이터를 직접 레이블링하지 않고, entropy가 높은 데이터만을 레이블하는 learning 
     
     - Entropy == 불안정성
+    ![image](https://user-images.githubusercontent.com/59414764/125149109-fa30fa80-e171-11eb-8178-b216fb2bdfcd.png)
+
     <img src='https://user-images.githubusercontent.com/59414764/125149100-dec5ef80-e171-11eb-8168-fcee19826a11.png' />
 
   </details>
