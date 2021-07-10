@@ -1,5 +1,15 @@
 기본적으로 static 그래프를 사용해야 상업적으로 또는 Edge Device에 배포가 용이하다는 점을 알고 가야한다.
 
-PyTorch: Dynamic Graph가 Default. Caffe2 모듈을 사용하여 static graph를 사용가능하다. 또한, caffe2를 사용하여 onnx format을 통해, 다른 딥러닝 프레임워크에 적용이 가능하다. 연구용 소스가 많다.  
-TensorFlow: 버전 2.0부터 Dynamic Graph가 Default로 변경되었다. @tf.function decorator를 사용하여 static graph로 사용 가능하다. Keras를 통해 아주 간편하게 알고리즘을 구축할 수 있다. 하지만 간편한 만큼
-알고리즘을 구체적으로 짤 수 없게 된다. TensorFlow-Lite를 통해 Edge Device에 배포가 가능하다. 또한 TPU 사용이 가능하다. 상업용 소스가 많다.
+PyTorch: 
+- Dynamic Graph가 Default. 
+- Caffe2 모듈을 사용하여 static graph를 사용가능하다. 
+- caffe2를 사용하여 onnx format을 통해, 다른 딥러닝 프레임워크에 적용이 가능하다. 
+- 연구용 소스가 많다.  
+
+TensorFlow: 
+- 버전 2.0부터 Dynamic Graph가 Default로 변경되었다. 
+- @tf.function decorator를 사용하여 static graph로 사용 가능하다. 
+- Keras를 통해 아주 간편하게 알고리즘을 구축할 수 있다. 하지만 간편한 만큼 알고리즘을 구체적으로 짤 수 없게 된다. 
+- TensorFlow-Lite를 통해 Edge Device에 배포가 가능하다. 
+- 또한 TPU 사용이 가능하다. 
+- 상업용 소스가 많다.
