@@ -89,6 +89,7 @@
     
     - 1x1 convolution: Channel 수를 조절할 수 있게 되고, 이를 이용하여 계산량을 줄일 수 있다. 또한 그에 따라 모델을 깊게 쌓을 수 있게 되므로, 더 많은 ReLU Activation을 사용할 수 있게 되어 비선형성을 늘릴 수도 있다.Xception, Googlenet, Moblienet 등 1x1 conv 방법을 채택하였다.   
     
+    - Active Learning: 지도 학습에서 모든 데이터를 직접 레이블링하지 않고, entropy가 높은 데이터만을 레이블하는 learning 
   </details>
   <details>
     <summary><b>Tips</b></summary>
