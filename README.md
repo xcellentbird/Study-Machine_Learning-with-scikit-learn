@@ -8,9 +8,9 @@
   
   <details>    
     <summary><b>글 모음</b></summary> 
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md">   실리콘밸리의 MLOps Review</a>     
+    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%EC%8B%A4%EB%A6%AC%EC%BD%98%EB%B0%B8%EB%A6%AC%EC%9D%98%20ML%EC%98%B5%EC%8A%A4%20%EA%B0%80%EC%9D%B4%EB%93%9C.md">   실리콘밸리의 MLOps Review </a>  
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AF%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8.ipynb">시계열 데이터 분석</a>   
+    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AF%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8.ipynb">시계열 데이터 분석 </a>   
     
     - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/Tensorflow/tf.GradientTape%EC%9D%98%20%EC%9B%90%EB%A6%AC.md">tf.GradientTape의 원리</a>   
     
