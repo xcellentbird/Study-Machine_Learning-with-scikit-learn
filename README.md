@@ -9,17 +9,17 @@
   <details>    
     <summary><b>글 모음</b></summary>   
     <p>
-    - <a>실리콘밸리의 MLOps Review</a>.  
+      - <a>실리콘밸리의 MLOps Review</a>.  
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AF%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8.ipynb">시계열 데이터 분석 </a>   
+      - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AF%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8.ipynb">시계열 데이터 분석 </a>   
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/Tensorflow/tf.GradientTape%EC%9D%98%20%EC%9B%90%EB%A6%AC.md">tf.GradientTape의 원리</a>   
+      - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/Tensorflow/tf.GradientTape%EC%9D%98%20%EC%9B%90%EB%A6%AC.md">tf.GradientTape의 원리</a>   
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/Deep_Learning_PyTorch.ipynb">PyTorch 이해하기</a>   
+      - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/Deep_Learning_PyTorch.ipynb">PyTorch 이해하기</a>   
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/Deep_Learning_Tensorflow.ipynb">TensorFlow 이해하기</a>   
+      - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/Deep_Learning_Tensorflow.ipynb">TensorFlow 이해하기</a>   
     
-    - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/TensorFlow%20vs%20PyTorch">TensorFlow vs PyTorch</a>   
+      - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/KDT%20AI/%EC%8B%A0%EA%B2%BD%EB%A7%9D%20%EA%B8%B0%EC%B4%88/TensorFlow%20vs%20PyTorch">TensorFlow vs PyTorch</a>   
     </p>
   </details>
   
