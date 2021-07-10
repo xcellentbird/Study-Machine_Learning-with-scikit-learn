@@ -9,8 +9,6 @@
   <details>    
     <summary><b>글 모음</b></summary>   
     <p>
-      - <a>실리콘밸리의 MLOps Review</a>.  
-    
       - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/%E1%84%89%E1%85%B5%E1%84%80%E1%85%A8%E1%84%8B%E1%85%A7%E1%86%AF%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%87%E1%85%AE%E1%86%AB%E1%84%89%E1%85%A5%E1%86%A8.ipynb">시계열 데이터 분석 </a>   
     
       - <a href="https://github.com/xcellentbird/STUDY/blob/main/AI/Tensorflow/tf.GradientTape%EC%9D%98%20%EC%9B%90%EB%A6%AC.md">tf.GradientTape의 원리</a>   
