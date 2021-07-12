@@ -57,27 +57,37 @@ MVT = Model, View, Template
 ---   
 ## Admin User
 
-0. urls.py에는 다음과 같이 '127.0.0.1/<port>/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있다.
-<img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="250" height="130" />.  
+1. urls.py에는 다음과 같이 '127.0.0.1/port/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있다
+<img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="250" height="130" />
    
-1. 아래 명령어를 통해 migration(모델의 변경 사항을 저장하는 작업)한다.
+2. 아래 명령어를 통해 migration(모델의 변경 사항을 저장하는 작업)한다.
 ```
 $ python manage.py migrate
 ```
 
-2. 아래 명령어를 통해 superuser(관리자) 계정을 생성합니다. (아래 빨간 글씨의 경우, 비밀번호가 너무 짧다는 경고를 의미).  
+3. 아래 명령어를 통해 superuser(관리자) 계정을 생성합니다. (아래 빨간 글씨의 경우, 비밀번호가 너무 짧다는 경고를 의미).  
 ```
 $ python manage.py createsuperuser
 ```
 <img src="https://user-images.githubusercontent.com/59414764/125022792-6d763600-e0b8-11eb-9538-87bf5e8448d2.png" width="500" height="150" />.  
 
-3. '/admin' 요청을 통해 로그인 페이지에 접속하여 설정한 ID와 password를 입력하면, 관리자 페이지에 접속할 수 있게 된다.
+4. '/admin' 요청을 통해 로그인 페이지에 접속하여 설정한 ID와 password를 입력하면, 관리자 페이지에 접속할 수 있게 된다.
 ![image](https://user-images.githubusercontent.com/59414764/125023077-102eb480-e0b9-11eb-944e-0e065580ca7f.png)
    
 ![image](https://user-images.githubusercontent.com/59414764/125023154-3b190880-e0b9-11eb-96a8-f3951a7859b4.png)
 
 ---   
 ## Models
+   
+1. 아래 그림과 같이 models.py를 이용하여 ORM(SQL과 같이 Relational DataBase에 속한다) 객체를 만들 수 있다.
 <img src="https://user-images.githubusercontent.com/59414764/125252919-dae1cb00-e333-11eb-89d3-86c414d0eb9c.png" width=500 height=400 />
+   
+2. admin.py에 ORM객체를 등록하여 관리자 모드에서 모델을 관리할 수 있게 한다.
 <img src="https://user-images.githubusercontent.com/59414764/125250433-365e8980-e331-11eb-817d-c441970debdf.png" width=350 height=100 />
+   
+3. 아래 명령어를 통해 모델의 변경된 사항을 알리고, 저장한다.
+```
+python manage.py makemigrations
+python manage.py migrate
+```
 <img src="https://user-images.githubusercontent.com/59414764/125249914-ad475280-e330-11eb-8bd7-ba2783cc5888.png" width=400 height=100 />
