@@ -93,4 +93,4 @@ python manage.py migrate
 <img src="https://user-images.githubusercontent.com/59414764/125249914-ad475280-e330-11eb-8bd7-ba2783cc5888.png" width=400 height=100 />
 
 4. 다음과 같이 관리자 페이지에 접속하여 ORM객체를 만들거나 변경할 수 있게 된다.
-<img src="https://user-images.githubusercontent.com/59414764/125254847-d3232600-e335-11eb-8f33-091b4f372018.png" width=400 height=100 />
+<img src="https://user-images.githubusercontent.com/59414764/125254847-d3232600-e335-11eb-8f33-091b4f372018.png" width=600 height=200 />
