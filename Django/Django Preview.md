@@ -99,7 +99,7 @@ python manage.py migrate
 ## Models to Template
 
 1. 아래 그림과 같이 settings.py에서 DIRS에 template의 경로를 넣어주어야 한다.
-<img src="https://user-images.githubusercontent.com/59414764/125273850-4fbf0000-e348-11eb-87b6-c7d401df8c22.png" width=700 height=200 />
+<img src="https://user-images.githubusercontent.com/59414764/125273850-4fbf0000-e348-11eb-87b6-c7d401df8c22.png" width=350 height=100 />
 
 
 ```
