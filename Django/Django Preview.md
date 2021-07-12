@@ -60,7 +60,7 @@ MVT = Model, View, Template
 1. urls.py에는 다음과 같이 '127.0.0.1/port/admin' 요청이 들어오면 django.contrib의 admin.site.urls(서버의 관리자 페이지)에 접근할 수 있게 되어있다
 <img src="https://user-images.githubusercontent.com/59414764/125021640-09eb0900-e0b6-11eb-8ab0-efefeb2a1326.png" width="250" height="130" />
    
-2. 아래 명령어를 통해 migration(모델의 변경 사항을 저장하는 작업)한다.
+2. 아래 명령어를 통해 migration(모델의 변경 사항을 저장하는 작업, 테이블을 생성하는 작업)한다.
 ```
 $ python manage.py migrate
 ```
@@ -85,7 +85,7 @@ $ python manage.py createsuperuser
 2. admin.py에 ORM객체를 등록하여 관리자 모드에서 모델을 관리할 수 있게 한다.
 <img src="https://user-images.githubusercontent.com/59414764/125250433-365e8980-e331-11eb-817d-c441970debdf.png" width=350 height=100 />
    
-3. 아래 명령어를 통해 모델의 변경된 사항을 알리고, 저장한다.
+3. 'makemigrations' 명령어를 통해 장고가 테이블 작업을 수행하기 위한 파일들을 생성한다. 그 후에 'migrate' 명령어를 통해 테이블이 생성된다.
 ```
 python manage.py makemigrations
 python manage.py migrate
