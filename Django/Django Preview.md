@@ -78,5 +78,7 @@ $ python manage.py createsuperuser
 
 ---   
 ## Models
+![image](https://user-images.githubusercontent.com/59414764/125250362-1a5ae800-e331-11eb-8fb1-744b20ec1927.png)
+![image](https://user-images.githubusercontent.com/59414764/125250433-365e8980-e331-11eb-817d-c441970debdf.png)
 
 ![image](https://user-images.githubusercontent.com/59414764/125249914-ad475280-e330-11eb-8bd7-ba2783cc5888.png)
