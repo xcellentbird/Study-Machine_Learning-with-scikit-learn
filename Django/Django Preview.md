@@ -94,3 +94,12 @@ python manage.py migrate
 
 4. 다음과 같이 관리자 페이지에 접속하여 ORM객체를 만들거나 변경할 수 있게 된다.
 <img src="https://user-images.githubusercontent.com/59414764/125254847-d3232600-e335-11eb-8f33-091b4f372018.png" width=700 height=200 />
+
+---
+## Models to Template
+
+1. 아래 그림과 같이 settings.py에서 DIRS에 template의 경로를 넣어주어야 한다.
+<img src="https://user-images.githubusercontent.com/59414764/125273850-4fbf0000-e348-11eb-87b6-c7d401df8c22.png" width=700 height=200 />
+
+
+```
