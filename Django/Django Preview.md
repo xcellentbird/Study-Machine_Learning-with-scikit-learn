@@ -101,11 +101,14 @@ python manage.py migrate
 1. python은 html을 그냥 인식할 수 없기 때문에, 아래 그림과 같이 settings.py에서 DIRS에 template의 경로를 넣어주어야 한다. 'BASE_DIR'는 settings.py 위쪽에 프로젝트 경로가 선언되어있다.
 <img src="https://user-images.githubusercontent.com/59414764/125273850-4fbf0000-e348-11eb-87b6-c7d401df8c22.png" width=350 height=100 />
 
-2. views.py에는 view함수를 다음 그림과 같이 만든다. 여기에서 중요한 점은 POST를 통해서 데이터를 받아온다는 것과 render함수를 통해 template와 이어주고, dictionary형태로 template에 정보를 보낼 수 있다는 것이다.
-![image](https://user-images.githubusercontent.com/59414764/125274886-58fc9c80-e349-11eb-98d8-6238ef262a0d.png)
+2. forms.py파일을 만들고 데이터를 입력 받기 위한 form 클래스를 만든다. 그리고 Meta 클래스를 만들어 어떤 모델의 어떤 칼럼과 연결되어 있어있는지 지정해놓는다.
+<img src="https://user-images.githubusercontent.com/59414764/125275658-4767c480-e34a-11eb-82b8-ec6ded8a874d.png" width=350 height=100 />
 
-3. urls.py에서 views의 view함수를 어떤 명령이 들어왔을 때 보여줄 지 설정해놓는다.
-![image](https://user-images.githubusercontent.com/59414764/125275245-c01a5100-e349-11eb-8325-5900d8d60059.png)
+3. views.py에는 view함수를 다음 그림과 같이 만든다. 여기에서 중요한 점은 POST를 통해서 데이터를 받아온다는 것과 render함수를 통해 template와 이어주고, dictionary형태로 template에 정보를 보낼 수 있다는 것이다.
+<img src="https://user-images.githubusercontent.com/59414764/125274886-58fc9c80-e349-11eb-98d8-6238ef262a0d.png" width=350 height=100 />
+
+4. urls.py에서 views의 view함수를 어떤 명령이 들어왔을 때 보여줄 지 설정해놓는다.
+<img src="https://user-images.githubusercontent.com/59414764/125275245-c01a5100-e349-11eb-8325-5900d8d60059.png" width=350 height=100 />
 
 
 
