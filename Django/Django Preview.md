@@ -114,5 +114,5 @@ python manage.py migrate
 <img src="https://user-images.githubusercontent.com/59414764/125276136-d5dc4600-e34a-11eb-8e41-7946f60f12f1.png" width=400 height=400 />
 
 6. 다음과 같이 Template(xml)과 Modle(관리자 페이지)에 적용이 되는 결과를 확인할 수 있다.
-<img src="https://user-images.githubusercontent.com/59414764/125276094-c5c46680-e34a-11eb-87d3-286be8262397.png" width=200 height=400 />
+<img src="https://user-images.githubusercontent.com/59414764/125276094-c5c46680-e34a-11eb-87d3-286be8262397.png" width=200 height=300 />
 <img src="https://user-images.githubusercontent.com/59414764/125276595-5ef37d00-e34b-11eb-9132-6a47129878bc.png" width=600 height=400 />
