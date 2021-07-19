@@ -58,7 +58,7 @@ render함수는 다음과 같이 사용할 수 있다.
 >django.shortcuts.render(request, template_name, context=None)
 > * request: 응답할 request 객체
 > * template_name: 템플릿 이름
-> * context: dictionary 타입의 데이터
+> * context: dictionary 타입의 데이터  
 > [Reference](https://docs.djangoproject.com/en/3.2/topics/http/shortcuts/#render)
 
 템플릿 태그 정리
