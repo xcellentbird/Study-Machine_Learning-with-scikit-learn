@@ -84,3 +84,7 @@ render함수는 다음과 같이 사용할 수 있다.
 modelA.objects.get(id=...)대신에 get_object_or_404(modelA, pk=...)을 대입하여 존재하지 않은 페이지 접근에 대해 404페이지로 대처할 수 있다.
 >django.shortcuts.get_object_or_404(klass, *args, **kwargs)  
 >[Reference](https://docs.djangoproject.com/en/3.2/topics/http/shortcuts/#get-object-or-404)
+
+### 오늘의 결과 화면
+![](https://images.velog.io/images/xcellentbird/post/9a95f76b-60eb-4367-9414-4dceb76588a6/image.png)
+![](https://images.velog.io/images/xcellentbird/post/cfc6909f-a1fe-4354-a92c-30935ef5e2f6/image.png)
