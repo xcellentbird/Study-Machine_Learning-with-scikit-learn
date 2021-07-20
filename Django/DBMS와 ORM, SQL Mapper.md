@@ -29,6 +29,7 @@ SQL Mapper: RDBMS를 SQL 쿼리문을 매핑하여 데이터를 객체(Object)�
 ORM(Object-Relational Mapping): RDBMS에서 쓰이는 테이블을 객체화하는 기술이다. SQL Mapper와 다른 점은 SQL문을 사용하지 않아도 된다는 것이다. Hibernate(JPA 표준 구현체)와 Django ORM, Sequelize(Node.js ORM)이 여기에 속한다.
 
 
+SQL Mapper, ORM, RDBMS 어느 것이 무조건 좋다할 것 없이, 모두 장단점이 있다. 일단은 단순하게 ORM이 SQL문을 쓰지 않아도 되고, 처리 속도가 느리다는 점만 기억하고 넘어가자. 각 언어, 미들웨어의 쉽고, 간편하다는 특징은 사용하면서 몸소 느끼는 것이 더 좋을 것 같다.
 
 참고:   
 http://tcpschool.com/mysql/mysql_intro_relationalDB.  
