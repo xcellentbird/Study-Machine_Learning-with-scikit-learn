@@ -1,7 +1,7 @@
 Django 서버를 배우면서 일단 ORM이 뭘까 궁금했다. 덩달아 나오는 키워드들 DB, SQL Mapper, JPA, DBMS, Hibernate, PostgreSQL, MySQL, MyBatis에 대해서도 공부할 필요가 있어보인다. 그리고 Spring은 어떤 방식으로 DB를 다루는 걸까? C나 Java가 아닌 SQL 쿼리문으로 DB를 관리하는 이유는 뭘까?   
 우선 기본기의 기본기로 돌아가 볼 필요가 있을 것 같다.
 
-### DB
+## DB
 먼저 DB란 무엇일까? DB(DataBase)란 여러 사람이 공유하여 사용할 목적으로 쳬계화해 통합 및 관리되는 데이터 집합을 의미한다. [wikipedia](https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4) DB 모델은 계층형, 네트워크형 등 여러 형태가 제안되었고, 이러한 데이터 베이스 모델을 관리하는 시스템을 DBMS(Database Management System)이라고 한다. DBMS는 사용자 또는 프로그램의 요구를 처리하고 응답하여 데이터를 원활하게 사용하게끔 해준다. 
  관계형 데이터베이스(Relational Database)는 현재 가장 많이 사용되고 있는 데이터베이스의 한 종류로 PostgreSQL, MySQL, ORACLE이 이 RDBMS(Relational DBMS)에 속한다.
 
