@@ -22,3 +22,9 @@ DB 또한 한계점을 가지고 있다. 압축 파일이나 이미지, 문서 �
 
 SQL Mapper: RDBMS를 SQL 쿼리문을 매핑하여 데이터를 객체(Object)화하는 기술을 뜻한다. Mybatis가 여기에 속한다.   
 ORM(Object-Relational Mapping): RDBMS에서 쓰이는 테이블을 객체화하는 기술이다. SQL Mapper와 다른 점은 SQL문을 사용하지 않아도 된다는 것이다. Hibernate(JPA 표준 구현체)와 Django ORM, Sequelize(Node.js ORM)이 여기에 속한다.
+
+참고:   
+http://tcpschool.com/mysql/mysql_intro_relationalDB
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=varkiry05&logNo=221188182244
+https://geonlee.tistory.com/207
+https://victorydntmd.tistory.com/195
